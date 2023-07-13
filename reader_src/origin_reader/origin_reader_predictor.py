@@ -332,8 +332,8 @@ def run_predict(rank=0, world_size=1):
     # 设置分词器和模型
     cls_token = '[CLS]'
     sep_token = '[SEP]'
-    unk_token = '[UNK]'
     pad_token = '[PAD]'
+    unk_token = '[UNK]'
     if 'electra' in args.bert_model.lower():
         if not args.no_network:
             tokenizer = ElectraTokenizer.from_pretrained(args.bert_model,
@@ -354,8 +354,8 @@ def run_predict(rank=0, world_size=1):
     elif 'roberta' in args.bert_model.lower():
         cls_token = '<s>'
         sep_token = '</s>'
-        unk_token = '<unk>'
         pad_token = '<pad>'
+        unk_token = '<unk>'
         if not args.no_network:
             tokenizer = RobertaTokenizer.from_pretrained(args.bert_model, do_lower_case=args.do_lower_case)
         else:

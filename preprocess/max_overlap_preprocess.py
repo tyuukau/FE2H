@@ -5,7 +5,11 @@ from preprocess_util import word_tokenize, convert_idx, fix_span, delete_stopwor
 
 
 def max_overlap_preprocess(config, windows_size=10):
-    """ 得到与问题重合度最大的篇章里的索引即得到答案的确切位置 重合度由答案附近10个词决定"""
+    """ 
+    Get the index in the chapter with the highest overlap with 
+    the question, that is, get the exact position of the answer. 
+    The overlap is determined by the 10 words near the answer.
+    """
     input_data = json.load(open(config.input_file, 'r'))
     all_no_answer_num = 0
     different_num = 0

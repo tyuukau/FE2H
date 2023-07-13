@@ -8,7 +8,6 @@ import spacy
 
 nlp = spacy.load("en_core_web_sm")
 
-
 def entity_process(data):
     data['entity_info'] = []
     question = data['question']

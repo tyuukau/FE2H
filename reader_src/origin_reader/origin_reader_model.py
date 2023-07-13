@@ -380,8 +380,8 @@ def run_train(rank=0, world_size=1):
     # 设置分词器和模型
     cls_token = '[CLS]'
     sep_token = '[SEP]'
-    unk_token = '[UNK]'
     pad_token = '[PAD]'
+    unk_token = '[UNK]'
     config = None
     if 'electra' in args.bert_model.lower():
         tokenizer = ElectraTokenizer.from_pretrained(args.bert_model,
@@ -400,8 +400,8 @@ def run_train(rank=0, world_size=1):
     elif 'roberta' in args.bert_model.lower():
         cls_token = '<s>'
         sep_token = '</s>'
-        unk_token = '<unk>'
         pad_token = '<pad>'
+        unk_token = '<unk>'
         tokenizer = RobertaTokenizer.from_pretrained(args.bert_model, do_lower_case=args.do_lower_case)
     elif 'bert' in args.bert_model.lower():
         tokenizer = BertTokenizer.from_pretrained(args.bert_model, do_lower_case=args.do_lower_case)

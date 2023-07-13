@@ -7,10 +7,10 @@ cd selector_src/selector
 # bert-base-uncased
 # google/electra-base-discriminator
 BERT_MODEL=google/electra-large-discriminator
+MODEL_NAME=ElectraForParagraphClassification
 OUTPUT_NAME=20211219_first_hop_electra_large_1e_paragraph_selector_12
 LOG_PREFIX=20211219_first_hop_electra_large_1e_paragraph_selector_12
 CACHE_NAME=20211219_first_hop_electra_large_1e_paragraph_selector_12
-MODEL_NAME=ElectraForParagraphClassification
 PREDICT_NAME=20211219_first_hop_electra_large_1e_paragraph_selector_12_origin_result
 python -u first_hop_selector.py \
     --bert_model $BERT_MODEL \
