@@ -36,12 +36,12 @@ from first_hop_data_helper import (HotpotQAExample,
 from first_hop_selector import dev_feature_getter, write_predictions
 from first_selector_predictor_config import get_config
 sys.path.append("../pretrain_model")
-from changed_model import BertForParagraphClassification, BertForRelatedSentence, \
+from pretrain_model.changed_model import BertForParagraphClassification, BertForRelatedSentence, \
     ElectraForParagraphClassification, ElectraForRelatedSentence, \
     RobertaForParagraphClassification, RobertaForRelatedSentence, \
     BertForParagraphClassificationMean, BertForParagraphClassificationMax, \
     ElectraForParagraphClassificationCrossAttention, AlbertForParagraphClassification
-from optimization import BertAdam, warmup_linear
+from pretrain_model.optimization import BertAdam, warmup_linear
 
 models_dict = {"BertForRelatedSentence": BertForRelatedSentence,
                "BertForParagraphClassification": BertForParagraphClassification,

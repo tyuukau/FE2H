@@ -3,7 +3,17 @@ from tqdm import tqdm
 
 
 def get_golden_paragraph(input_file, output_file):
-    """ 获取真实的答案支撑句 """
+    """
+    The function `get_golden_paragraph` takes an input file containing JSON data, extracts relevant
+    information (selected supporting facts for each data entry) from the data, and saves the 
+    extracted information to an output file in JSON format.
+    
+    :param input_file: The input_file parameter is the path to the JSON file containing the data. This
+    file should contain a list of dictionaries, where each dictionary represents a piece of information.
+    Each dictionary should have the following keys:
+    :param output_file: The `output_file` parameter is the file path where the output will be saved. It
+    should be a JSON file
+    """
     data = json.load(open(input_file, "r"))
     sp_dict = {}
     for info in tqdm(data):
@@ -23,10 +33,10 @@ def get_golden_paragraph(input_file, output_file):
 
 
 if __name__ == '__main__':
-    input_files = ["../../data/hotpot_data/hotpot_train_labeled_data_v3.json",
-                   "../../data/hotpot_data/hotpot_dev_labeled_data_v3.json"]
-    output_files = ["../../data/hotpot_data/train_golden.json",
-                    "../../data/hotpot_data/dev_golden.json"]
+    input_files = ["../data/hotpot_data/hotpot_train_labeled_data_v3.json",
+                   "../data/hotpot_data/hotpot_dev_labeled_data_v3.json"]
+    output_files = ["../data/hotpot_data/train_golden.json",
+                    "../data/hotpot_data/dev_golden.json"]
     for input_file, output_file in zip(input_files, output_files):
         get_golden_paragraph(input_file, output_file)
 

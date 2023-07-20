@@ -19,12 +19,12 @@ from first_hop_data_helper import convert_examples_to_features, read_hotpotqa_ex
 from first_hop_prediction_helper import prediction_evaluate, write_predictions
 
 sys.path.append("../pretrain_model")
-from changed_model import BertForParagraphClassification, BertForRelatedSentence, \
+from pretrain_model.changed_model import BertForParagraphClassification, BertForRelatedSentence, \
     ElectraForParagraphClassification, ElectraForRelatedSentence, \
     RobertaForParagraphClassification, RobertaForRelatedSentence, \
     BertForParagraphClassificationMean, BertForParagraphClassificationMax,\
     ElectraForParagraphClassificationCrossAttention, AlbertForParagraphClassification
-from optimization import BertAdam, warmup_linear
+from pretrain_model.optimization import BertAdam, warmup_linear
 
 models_dict = {"BertForRelatedSentence": BertForRelatedSentence,
                "BertForParagraphClassification": BertForParagraphClassification,

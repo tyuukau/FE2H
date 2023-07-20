@@ -27,7 +27,7 @@ def get_config():
                              "\BertForQuestionAnsweringThreeCoAttention"
                              "\BertForQuestionAnsweringThreeSameCoAttention"
                              "\BertForQuestionAnsweringForward")
-    parser.add_argument("--train_file", default='../../data/hotpot_data/hotpot_train_labeled_data_v3_with_entity_label.json', type=str,
+    parser.add_argument("--train_file", default='../../data/hotpot_data/hotpot_train_labeled_data_v3.json', type=str,
                         help="SQuAD json for training. E.g., train-v1.1.json")
     # 设置是否重新写入结果
     # parser.add_argument("--overwrite_result", dest='overwrite_result', action='store_true')
@@ -36,7 +36,7 @@ def get_config():
     parser.add_argument("--save_all_steps", type=str2bool, default=False)
     parser.add_argument("--log_prefix", default="qa_base_20211022_with_entity_test", type=str)
     parser.add_argument("--log_path", default="../../log", type=str)
-    parser.add_argument("--dev_file", default='../../data/hotpot_data/hotpot_dev_labeled_data_v3_with_entity_label.json', type=str,
+    parser.add_argument("--dev_file", default='../../data/hotpot_data/hotpot_dev_labeled_data_v3.json', type=str,
                         help="SQuAD json for training. E.g., train-v1.1.json")
     parser.add_argument("--train_supporting_para_file",
                         default='../../data/selector/second_hop_related_paragraph_result/train_related.json', type=str,

@@ -6,6 +6,7 @@ echo "----------------------------------------------------"
 #sleep 1h
 #echo "start to train model..."
 export CUDA_VISIBLE_DEVICES="0,1,2"
+
 BERT_MODEL=albert-xxlarge-v2
 MODEL_NAME=AlbertForQuestionAnsweringQANetWithMask
 
@@ -16,6 +17,7 @@ PRETRAIN_TRAIN_FILE=../../data/hotpot_data/hotpot_labeled_data_squad.json
 PRETRAIN_DEV_FILE=../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
 PRETRAIN_CACHE=../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask
 PRETRAIN_DIR=../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask
+PRETRAIN_SUPPORTING_FILE=../../data/hotpot_data/train_golden.json
 
 # truly train setting
 TRAIN_DIR=../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
@@ -23,6 +25,9 @@ TRAIN_TRAIN_FILE=../../data/hotpot_data/hotpot_train_labeled_data_v3.json
 TRAIN_DEV_FILE=../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
 TRAIN_LOG=20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
 TRAIN_CACHE=../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+TRAIN_SUPPORTING_FILE=../../data/hotpot_data/train_golden.json
+
+DEV_SUPPORTING_FILE=../../data/hotpot_data/dev_golden.json
 
 python -u origin_reader_model.py \
   --bert_model $BERT_MODEL \
@@ -32,7 +37,7 @@ python -u origin_reader_model.py \
   --overwrite_result True \
   --train_file $PRETRAIN_TRAIN_FILE \
   --dev_file $PRETRAIN_DEV_FILE \
-  --train_supporting_para_file ../../data/hotpot_data/train_golden.json \
+  --train_supporting_para_file $PRETRAIN_SUPPORTING_FILE \
   --dev_supporting_para_file ../../data/selector/20211219_second_hop_electra_large_1e_paragraph_selector_12_result/dev_related.json \
   --feature_cache_path $PRETRAIN_CACHE \
   --train_batch_size 12 \
@@ -55,7 +60,7 @@ python -u origin_reader_model.py \
   --overwrite_result True \
   --train_file $TRAIN_TRAIN_FILE \
   --dev_file  $TRAIN_DEV_FILE \
-  --train_supporting_para_file ../../data/hotpot_data/train_golden.json \
+  --train_supporting_para_file $TRAIN_SUPPORTING_FILE \
   --dev_supporting_para_file ../../data/selector/20211219_second_hop_electra_large_1e_paragraph_selector_12_result/dev_related.json \
   --feature_cache_path $TRAIN_CACHE \
   --train_batch_size 12 \

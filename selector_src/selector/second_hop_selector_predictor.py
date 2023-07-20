@@ -35,13 +35,13 @@ from second_hop_data_helper import (HotpotQAExample,
                                     convert_examples_to_second_features)
 from second_selector_predictor_config import get_config
 sys.path.append("../pretrain_model")
-from changed_model import BertForParagraphClassification, BertForRelatedSentence, \
+from pretrain_model.changed_model import BertForParagraphClassification, BertForRelatedSentence, \
     ElectraForParagraphClassification, ElectraForRelatedSentence, \
     RobertaForParagraphClassification, RobertaForRelatedSentence, \
     BertForParagraphClassificationMean, BertForParagraphClassificationMax, \
     ElectraForParagraphClassificationCrossAttention, ElectraSecondForParagraphClassificationCrossAttention, \
     AlbertForParagraphClassification
-from optimization import BertAdam, warmup_linear
+from pretrain_model.optimization import BertAdam, warmup_linear
 
 models_dict = {"BertForRelatedSentence": BertForRelatedSentence,
                "BertForParagraphClassification": BertForParagraphClassification,

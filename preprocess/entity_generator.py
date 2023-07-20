@@ -9,6 +9,13 @@ import spacy
 nlp = spacy.load("en_core_web_sm")
 
 def entity_process(data):
+    """
+     It processes the question and the sentences in the context to find entities using 
+     the spaCy model and adds the entity labels to the data.
+    
+    :param data: The `data` parameter is a dictionary that contains the following keys:
+    :return: The function `entity_process` returns the modified `data` dictionary.
+    """
     data['entity_info'] = []
     question = data['question']
     question_entity_labels = ['' for _ in range(len(question))]
@@ -34,9 +41,12 @@ def entity_process(data):
 
 
 def generate_entity_label(input_file,
-                          output_file,
-                          dict_file):
-    """"""
+                          output_file):
+    """
+    reads a JSON input file containing a list of data entries, applies the entity_process 
+    function to each data entry in parallel using multiprocessing, and writes the 
+    processed data to a JSON output file.
+    """
     datas = None
     with open(input_file, "r") as f:
         datas = json.load(f)
@@ -51,44 +61,42 @@ def generate_entity_label(input_file,
     json.dump(new_datas, open(output_file, 'w', encoding='utf-8'))
 
 
-def generate_entity_label_single_process(input_file,
-                                         output_file,
-                                         dict_file):
-    with open(input_file, "r") as f:
-        datas = json.load(f)
-        datas = datas[:1000]
-    all_ner_info_dict = {}
-    for data in tqdm(datas):
-        data['entity_info'] = []
-        # TODO 增加query的实体识别
-        for ind_con, context in enumerate(data['context']):
-            sents_entity_labels = []
-            sents = context[1]
-            for sent in sents:
-                doc = nlp(sent)
-                sent_entity_labels = ['' for _ in range(len(sent))]
-                for ent in doc.ents:
-                    range_num = ent.end_char - ent.start_char
-                    ent_label = ent.label_
-                    if ent_label not in all_ner_info_dict:
-                        all_ner_info_dict[ent_label] = 1
-                    else:
-                        all_ner_info_dict[ent_label] += 1
-                    sent_entity_labels[ent.start_char: ent.end_char] = [ent.label_ for _ in range(range_num)]
-                sents_entity_labels.append(sent_entity_labels)
-            data['entity_info'].append(sents_entity_labels)
-    print(all_ner_info_dict)
+# def generate_entity_label_single_process(input_file,
+#                                          output_file,
+#                                          dict_file):
+#     with open(input_file, "r") as f:
+#         datas = json.load(f)
+#         datas = datas[:1000]
+#     all_ner_info_dict = {}
+#     for data in tqdm(datas):
+#         data['entity_info'] = []
+#         for ind_con, context in enumerate(data['context']):
+#             sents_entity_labels = []
+#             sents = context[1]
+#             for sent in sents:
+#                 doc = nlp(sent)
+#                 sent_entity_labels = ['' for _ in range(len(sent))]
+#                 for ent in doc.ents:
+#                     range_num = ent.end_char - ent.start_char
+#                     ent_label = ent.label_
+#                     if ent_label not in all_ner_info_dict:
+#                         all_ner_info_dict[ent_label] = 1
+#                     else:
+#                         all_ner_info_dict[ent_label] += 1
+#                     sent_entity_labels[ent.start_char: ent.end_char] = [ent.label_ for _ in range(range_num)]
+#                 sents_entity_labels.append(sent_entity_labels)
+#             data['entity_info'].append(sents_entity_labels)
+#     print(all_ner_info_dict)
 
 
 if __name__ == '__main__':
-    input_files = ["../../data/hotpot_data/hotpot_train_labeled_data_v3.json",
-                    "../../data/hotpot_data/hotpot_dev_labeled_data_v3.json"]
-    output_files = ["../../data/hotpot_data/hotpot_train_labeled_data_v3_with_entity_label.json",
-                    "../../data/hotpot_data/hotpot_dev_labeled_data_v3_with_entity_label.json"]
-    dict_files = ["../../data/hotpot_data/hotpot_train_labeled_data_v3_entity_dict.json",
-                  "../../data/hotpot_data/hotpot_dev_labeled_data_v3_entity_dict.json"
-                  ]
-    for input_file, output_file, dict_file in zip(input_files, output_files, dict_files):
+    input_files = ["../data/hotpot_data/hotpot_train_labeled_data_v3.json",
+                    "../data/hotpot_data/hotpot_dev_labeled_data_v3.json"]
+    output_files = ["../data/hotpot_data/hotpot_train_labeled_data_v3.json",
+                    "../data/hotpot_data/hotpot_dev_labeled_data_v3.json"]
+    # dict_files = ["../../data/hotpot_data/hotpot_train_labeled_data_v3_entity_dict.json",
+    #               "../../data/hotpot_data/hotpot_dev_labeled_data_v3_entity_dict.json"
+    #               ]
+    for input_file, output_file in zip(input_files, output_files):
         generate_entity_label(input_file=input_file,
-                              output_file=output_file,
-                              dict_file=dict_file)
+                              output_file=output_file)
