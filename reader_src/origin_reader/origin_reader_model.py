@@ -47,7 +47,7 @@ from lazy_dataloader import LazyLoadTensorDataset
 from config import get_config
 
 sys.path.append("../pretrain_model")
-from pretrain_model.changed_model_roberta import ElectraForQuestionAnsweringForwardBest, \
+from changed_model_roberta import ElectraForQuestionAnsweringForwardBest, \
     ElectraForQuestionAnsweringMatchAttention, ElectraForQuestionAnsweringCrossAttention, \
     ElectraForQuestionAnsweringBiAttention, ElectraForQuestionAnsweringCrossAttentionOnReader,\
     ElectraForQuestionAnsweringThreeCrossAttention, \
@@ -65,7 +65,7 @@ from pretrain_model.changed_model_roberta import ElectraForQuestionAnsweringForw
     ElectraForQuestionAnsweringCoAttention, ElectraForQuestionAnsweringQANetWoCro, \
     ElectraForQuestionAnsweringQANetWoLN, AlbertForQuestionAnsweringForwardBestWithMask, \
     AlbertForQuestionAnsweringQANetWithMask
-from pretrain_model.optimization import BertAdam, warmup_linear
+from optimization import BertAdam, warmup_linear
 # 自定义好的模型
 model_dict = {
     'ElectraForQuestionAnsweringForwardBest': ElectraForQuestionAnsweringForwardBest,
@@ -200,6 +200,7 @@ def get_train_data(args,
                    pad_token='',
                    ):
     """ 获取训练数据 """
+    print(type(tokenizer))
     cached_train_example_file = '{}/train_example_file_{}_{}_{}_{}'.format(args.feature_cache_path,
                                                                            args.bert_model.split('/')[-1],
                                                                            str(args.max_seq_length),
@@ -395,7 +396,7 @@ def run_train(rank=0, world_size=1):
         config_class = AlbertConfig()
         config = config_class.from_pretrained(args.bert_model)
 
-        tokenizer = AlbertTokenizer.from_pretrained(args.bert_model, do_lower_case=args.do_lower_case)
+        tokenizer = AlbertTokenizer.from_pretrained("albert-base-v2", do_lower_case=args.do_lower_case)
     elif 'roberta' in args.bert_model.lower():
         cls_token = '<s>'
         sep_token = '</s>'
@@ -404,6 +405,8 @@ def run_train(rank=0, world_size=1):
         tokenizer = RobertaTokenizer.from_pretrained(args.bert_model, do_lower_case=args.do_lower_case)
     elif 'bert' in args.bert_model.lower():
         tokenizer = BertTokenizer.from_pretrained(args.bert_model, do_lower_case=args.do_lower_case)
+    print(type(tokenizer))    
+        
     train_examples = None
     num_train_optimization_steps = None
     if args.checkpoint_path is None:

@@ -1,0 +1,36 @@
+2023-07-20 12:42:21,953 - root - INFO - ---------------所有配置---------------
+2023-07-20 12:42:21,953 - root - INFO - 所有参数配置如下：
+2023-07-20 12:42:21,953 - root - INFO - bert_model: albert-xxlarge-v2
+2023-07-20 12:42:21,953 - root - INFO - output_dir: ../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask
+2023-07-20 12:42:21,953 - root - INFO - checkpoint_path: None
+2023-07-20 12:42:21,953 - root - INFO - warmup_steps: -1
+2023-07-20 12:42:21,953 - root - INFO - model_name: AlbertForQuestionAnsweringQANetWithMask
+2023-07-20 12:42:21,953 - root - INFO - train_file: ../../data/hotpot_data/hotpot_labeled_data_squad.json
+2023-07-20 12:42:21,953 - root - INFO - overwrite_result: True
+2023-07-20 12:42:21,953 - root - INFO - save_all_steps: True
+2023-07-20 12:42:21,953 - root - INFO - log_prefix: 20220125_run_qanet_pretrain_bs12_lr10_with_mask
+2023-07-20 12:42:21,953 - root - INFO - log_path: ../../log
+2023-07-20 12:42:21,953 - root - INFO - dev_file: ../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
+2023-07-20 12:42:21,953 - root - INFO - train_supporting_para_file: ../../data/hotpot_data/train_golden.json
+2023-07-20 12:42:21,953 - root - INFO - dev_supporting_para_file: ../../data/selector_data/20211217_second_hop_electra_base_just_paragraph_selector_12_value_setting_result/dev_related.json
+2023-07-20 12:42:21,953 - root - INFO - feature_cache_path: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask
+2023-07-20 12:42:21,953 - root - INFO - feature_suffix: origin_model
+2023-07-20 12:42:21,953 - root - INFO - max_seq_length: 512
+2023-07-20 12:42:21,953 - root - INFO - doc_stride: 256
+2023-07-20 12:42:21,953 - root - INFO - train_batch_size: 12
+2023-07-20 12:42:21,954 - root - INFO - val_batch_size: 12
+2023-07-20 12:42:21,954 - root - INFO - learning_rate: 1e-05
+2023-07-20 12:42:21,954 - root - INFO - num_train_epochs: 3.0
+2023-07-20 12:42:21,954 - root - INFO - warmup_proportion: 0.1
+2023-07-20 12:42:21,954 - root - INFO - adam_epsilon: 1e-08
+2023-07-20 12:42:21,954 - root - INFO - verbose_logging: False
+2023-07-20 12:42:21,954 - root - INFO - no_cuda: False
+2023-07-20 12:42:21,954 - root - INFO - seed: 2021
+2023-07-20 12:42:21,954 - root - INFO - gradient_accumulation_steps: 1
+2023-07-20 12:42:21,954 - root - INFO - do_lower_case: True
+2023-07-20 12:42:21,954 - root - INFO - local_rank: -1
+2023-07-20 12:42:21,954 - root - INFO - fp16: False
+2023-07-20 12:42:21,954 - root - INFO - loss_scale: 0
+2023-07-20 12:42:21,954 - root - INFO - save_model_step: 5000
+2023-07-20 12:42:21,954 - root - INFO - ------------------------------
+2023-07-20 12:42:21,954 - root - INFO - device: cpu n_gpu: 0, distributed training: False, 16-bits training: False

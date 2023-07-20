@@ -1,0 +1,977 @@
+2023-07-20 12:49:33,846 - root - INFO - ---------------所有配置---------------
+2023-07-20 12:49:33,846 - root - INFO - 所有参数配置如下：
+2023-07-20 12:49:33,846 - root - INFO - bert_model: albert-base-v2-finetuned-squad
+2023-07-20 12:49:33,846 - root - INFO - output_dir: ../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 12:49:33,846 - root - INFO - checkpoint_path: None
+2023-07-20 12:49:33,846 - root - INFO - warmup_steps: -1
+2023-07-20 12:49:33,846 - root - INFO - model_name: AlbertForQuestionAnsweringQANetWithMask
+2023-07-20 12:49:33,847 - root - INFO - train_file: ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 12:49:33,847 - root - INFO - overwrite_result: True
+2023-07-20 12:49:33,847 - root - INFO - save_all_steps: True
+2023-07-20 12:49:33,847 - root - INFO - log_prefix: 20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 12:49:33,847 - root - INFO - log_path: ../../log
+2023-07-20 12:49:33,847 - root - INFO - dev_file: ../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
+2023-07-20 12:49:33,847 - root - INFO - train_supporting_para_file: ../../data/hotpot_data/train_golden.json
+2023-07-20 12:49:33,847 - root - INFO - dev_supporting_para_file: ../../data/selector_data/20211217_second_hop_electra_base_just_paragraph_selector_12_value_setting_result/dev_related.json
+2023-07-20 12:49:33,847 - root - INFO - feature_cache_path: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 12:49:33,847 - root - INFO - feature_suffix: origin_model
+2023-07-20 12:49:33,847 - root - INFO - max_seq_length: 512
+2023-07-20 12:49:33,847 - root - INFO - doc_stride: 256
+2023-07-20 12:49:33,847 - root - INFO - train_batch_size: 12
+2023-07-20 12:49:33,847 - root - INFO - val_batch_size: 12
+2023-07-20 12:49:33,847 - root - INFO - learning_rate: 1e-05
+2023-07-20 12:49:33,847 - root - INFO - num_train_epochs: 3.0
+2023-07-20 12:49:33,847 - root - INFO - warmup_proportion: 0.1
+2023-07-20 12:49:33,847 - root - INFO - adam_epsilon: 1e-08
+2023-07-20 12:49:33,847 - root - INFO - verbose_logging: False
+2023-07-20 12:49:33,848 - root - INFO - no_cuda: False
+2023-07-20 12:49:33,848 - root - INFO - seed: 2021
+2023-07-20 12:49:33,848 - root - INFO - gradient_accumulation_steps: 1
+2023-07-20 12:49:33,849 - root - INFO - do_lower_case: True
+2023-07-20 12:49:33,849 - root - INFO - local_rank: -1
+2023-07-20 12:49:33,849 - root - INFO - fp16: False
+2023-07-20 12:49:33,849 - root - INFO - loss_scale: 0
+2023-07-20 12:49:33,849 - root - INFO - save_model_step: 500
+2023-07-20 12:49:33,849 - root - INFO - ------------------------------
+2023-07-20 12:49:33,849 - root - INFO - device: cpu n_gpu: 0, distributed training: False, 16-bits training: False
+2023-07-20 12:51:20,280 - root - INFO - ---------------所有配置---------------
+2023-07-20 12:51:20,281 - root - INFO - 所有参数配置如下：
+2023-07-20 12:51:20,281 - root - INFO - bert_model: arvalinno/albert-base-v2-finetuned-squad
+2023-07-20 12:51:20,281 - root - INFO - output_dir: ../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 12:51:20,281 - root - INFO - checkpoint_path: None
+2023-07-20 12:51:20,281 - root - INFO - warmup_steps: -1
+2023-07-20 12:51:20,281 - root - INFO - model_name: AlbertForQuestionAnsweringQANetWithMask
+2023-07-20 12:51:20,281 - root - INFO - train_file: ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 12:51:20,281 - root - INFO - overwrite_result: True
+2023-07-20 12:51:20,281 - root - INFO - save_all_steps: True
+2023-07-20 12:51:20,281 - root - INFO - log_prefix: 20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 12:51:20,281 - root - INFO - log_path: ../../log
+2023-07-20 12:51:20,281 - root - INFO - dev_file: ../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
+2023-07-20 12:51:20,281 - root - INFO - train_supporting_para_file: ../../data/hotpot_data/train_golden.json
+2023-07-20 12:51:20,281 - root - INFO - dev_supporting_para_file: ../../data/selector_data/20211217_second_hop_electra_base_just_paragraph_selector_12_value_setting_result/dev_related.json
+2023-07-20 12:51:20,281 - root - INFO - feature_cache_path: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 12:51:20,281 - root - INFO - feature_suffix: origin_model
+2023-07-20 12:51:20,281 - root - INFO - max_seq_length: 512
+2023-07-20 12:51:20,281 - root - INFO - doc_stride: 256
+2023-07-20 12:51:20,281 - root - INFO - train_batch_size: 12
+2023-07-20 12:51:20,281 - root - INFO - val_batch_size: 12
+2023-07-20 12:51:20,281 - root - INFO - learning_rate: 1e-05
+2023-07-20 12:51:20,281 - root - INFO - num_train_epochs: 3.0
+2023-07-20 12:51:20,281 - root - INFO - warmup_proportion: 0.1
+2023-07-20 12:51:20,281 - root - INFO - adam_epsilon: 1e-08
+2023-07-20 12:51:20,281 - root - INFO - verbose_logging: False
+2023-07-20 12:51:20,281 - root - INFO - no_cuda: False
+2023-07-20 12:51:20,281 - root - INFO - seed: 2021
+2023-07-20 12:51:20,281 - root - INFO - gradient_accumulation_steps: 1
+2023-07-20 12:51:20,281 - root - INFO - do_lower_case: True
+2023-07-20 12:51:20,281 - root - INFO - local_rank: -1
+2023-07-20 12:51:20,282 - root - INFO - fp16: False
+2023-07-20 12:51:20,282 - root - INFO - loss_scale: 0
+2023-07-20 12:51:20,282 - root - INFO - save_model_step: 500
+2023-07-20 12:51:20,282 - root - INFO - ------------------------------
+2023-07-20 12:51:20,282 - root - INFO - device: cpu n_gpu: 0, distributed training: False, 16-bits training: False
+2023-07-20 12:51:56,541 - root - INFO - ---------------所有配置---------------
+2023-07-20 12:51:56,542 - root - INFO - 所有参数配置如下：
+2023-07-20 12:51:56,542 - root - INFO - bert_model: arvalinno/albert-base-v2-finetuned-squad
+2023-07-20 12:51:56,542 - root - INFO - output_dir: ../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 12:51:56,542 - root - INFO - checkpoint_path: None
+2023-07-20 12:51:56,542 - root - INFO - warmup_steps: -1
+2023-07-20 12:51:56,542 - root - INFO - model_name: AlbertForQuestionAnsweringQANetWithMask
+2023-07-20 12:51:56,542 - root - INFO - train_file: ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 12:51:56,542 - root - INFO - overwrite_result: True
+2023-07-20 12:51:56,542 - root - INFO - save_all_steps: True
+2023-07-20 12:51:56,542 - root - INFO - log_prefix: 20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 12:51:56,542 - root - INFO - log_path: ../../log
+2023-07-20 12:51:56,542 - root - INFO - dev_file: ../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
+2023-07-20 12:51:56,542 - root - INFO - train_supporting_para_file: ../../data/hotpot_data/train_golden.json
+2023-07-20 12:51:56,542 - root - INFO - dev_supporting_para_file: ../../data/selector_data/20211217_second_hop_electra_base_just_paragraph_selector_12_value_setting_result/dev_related.json
+2023-07-20 12:51:56,542 - root - INFO - feature_cache_path: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 12:51:56,542 - root - INFO - feature_suffix: origin_model
+2023-07-20 12:51:56,542 - root - INFO - max_seq_length: 512
+2023-07-20 12:51:56,542 - root - INFO - doc_stride: 256
+2023-07-20 12:51:56,542 - root - INFO - train_batch_size: 12
+2023-07-20 12:51:56,543 - root - INFO - val_batch_size: 12
+2023-07-20 12:51:56,543 - root - INFO - learning_rate: 1e-05
+2023-07-20 12:51:56,543 - root - INFO - num_train_epochs: 3.0
+2023-07-20 12:51:56,543 - root - INFO - warmup_proportion: 0.1
+2023-07-20 12:51:56,543 - root - INFO - adam_epsilon: 1e-08
+2023-07-20 12:51:56,543 - root - INFO - verbose_logging: False
+2023-07-20 12:51:56,543 - root - INFO - no_cuda: False
+2023-07-20 12:51:56,543 - root - INFO - seed: 2021
+2023-07-20 12:51:56,543 - root - INFO - gradient_accumulation_steps: 1
+2023-07-20 12:51:56,543 - root - INFO - do_lower_case: True
+2023-07-20 12:51:56,543 - root - INFO - local_rank: -1
+2023-07-20 12:51:56,543 - root - INFO - fp16: False
+2023-07-20 12:51:56,543 - root - INFO - loss_scale: 0
+2023-07-20 12:51:56,543 - root - INFO - save_model_step: 500
+2023-07-20 12:51:56,543 - root - INFO - ------------------------------
+2023-07-20 12:51:56,543 - root - INFO - device: cpu n_gpu: 0, distributed training: False, 16-bits training: False
+2023-07-20 12:54:16,359 - root - INFO - ---------------所有配置---------------
+2023-07-20 12:54:16,360 - root - INFO - 所有参数配置如下：
+2023-07-20 12:54:16,360 - root - INFO - bert_model: arvalinno/albert-base-v2-finetuned-squad
+2023-07-20 12:54:16,360 - root - INFO - output_dir: ../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 12:54:16,360 - root - INFO - checkpoint_path: None
+2023-07-20 12:54:16,360 - root - INFO - warmup_steps: -1
+2023-07-20 12:54:16,360 - root - INFO - model_name: AlbertForQuestionAnsweringQANetWithMask
+2023-07-20 12:54:16,360 - root - INFO - train_file: ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 12:54:16,360 - root - INFO - overwrite_result: True
+2023-07-20 12:54:16,360 - root - INFO - save_all_steps: True
+2023-07-20 12:54:16,360 - root - INFO - log_prefix: 20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 12:54:16,360 - root - INFO - log_path: ../../log
+2023-07-20 12:54:16,360 - root - INFO - dev_file: ../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
+2023-07-20 12:54:16,360 - root - INFO - train_supporting_para_file: ../../data/hotpot_data/train_golden.json
+2023-07-20 12:54:16,360 - root - INFO - dev_supporting_para_file: ../../data/selector_data/20211217_second_hop_electra_base_just_paragraph_selector_12_value_setting_result/dev_related.json
+2023-07-20 12:54:16,360 - root - INFO - feature_cache_path: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 12:54:16,360 - root - INFO - feature_suffix: origin_model
+2023-07-20 12:54:16,360 - root - INFO - max_seq_length: 512
+2023-07-20 12:54:16,360 - root - INFO - doc_stride: 256
+2023-07-20 12:54:16,360 - root - INFO - train_batch_size: 12
+2023-07-20 12:54:16,360 - root - INFO - val_batch_size: 12
+2023-07-20 12:54:16,360 - root - INFO - learning_rate: 1e-05
+2023-07-20 12:54:16,360 - root - INFO - num_train_epochs: 3.0
+2023-07-20 12:54:16,360 - root - INFO - warmup_proportion: 0.1
+2023-07-20 12:54:16,360 - root - INFO - adam_epsilon: 1e-08
+2023-07-20 12:54:16,360 - root - INFO - verbose_logging: False
+2023-07-20 12:54:16,360 - root - INFO - no_cuda: False
+2023-07-20 12:54:16,360 - root - INFO - seed: 2021
+2023-07-20 12:54:16,360 - root - INFO - gradient_accumulation_steps: 1
+2023-07-20 12:54:16,360 - root - INFO - do_lower_case: True
+2023-07-20 12:54:16,360 - root - INFO - local_rank: -1
+2023-07-20 12:54:16,360 - root - INFO - fp16: False
+2023-07-20 12:54:16,360 - root - INFO - loss_scale: 0
+2023-07-20 12:54:16,360 - root - INFO - save_model_step: 500
+2023-07-20 12:54:16,361 - root - INFO - ------------------------------
+2023-07-20 12:54:16,361 - root - INFO - device: cpu n_gpu: 0, distributed training: False, 16-bits training: False
+2023-07-20 12:54:20,129 - root - INFO - start model from pretrained model!
+2023-07-20 12:54:29,731 - root - INFO - parameter setting...
+2023-07-20 12:54:29,731 - root - INFO - start read example...
+2023-07-20 12:54:29,731 - root - INFO - creating examples from origin file to ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 12:54:29,732 - root - INFO - read examples from origin file
+2023-07-20 12:58:08,584 - root - INFO - ---------------所有配置---------------
+2023-07-20 12:58:08,584 - root - INFO - 所有参数配置如下：
+2023-07-20 12:58:08,584 - root - INFO - bert_model: arvalinno/albert-base-v2-finetuned-squad
+2023-07-20 12:58:08,584 - root - INFO - output_dir: ../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 12:58:08,584 - root - INFO - checkpoint_path: None
+2023-07-20 12:58:08,584 - root - INFO - warmup_steps: -1
+2023-07-20 12:58:08,584 - root - INFO - model_name: AlbertForQuestionAnsweringQANetWithMask
+2023-07-20 12:58:08,584 - root - INFO - train_file: ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 12:58:08,585 - root - INFO - overwrite_result: True
+2023-07-20 12:58:08,585 - root - INFO - save_all_steps: True
+2023-07-20 12:58:08,585 - root - INFO - log_prefix: 20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 12:58:08,585 - root - INFO - log_path: ../../log
+2023-07-20 12:58:08,585 - root - INFO - dev_file: ../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
+2023-07-20 12:58:08,585 - root - INFO - train_supporting_para_file: ../../data/hotpot_data/train_golden.json
+2023-07-20 12:58:08,585 - root - INFO - dev_supporting_para_file: ../../data/selector_data/20211217_second_hop_electra_base_just_paragraph_selector_12_value_setting_result/dev_related.json
+2023-07-20 12:58:08,585 - root - INFO - feature_cache_path: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 12:58:08,585 - root - INFO - feature_suffix: origin_model
+2023-07-20 12:58:08,585 - root - INFO - max_seq_length: 512
+2023-07-20 12:58:08,585 - root - INFO - doc_stride: 256
+2023-07-20 12:58:08,585 - root - INFO - train_batch_size: 12
+2023-07-20 12:58:08,585 - root - INFO - val_batch_size: 12
+2023-07-20 12:58:08,585 - root - INFO - learning_rate: 1e-05
+2023-07-20 12:58:08,585 - root - INFO - num_train_epochs: 3.0
+2023-07-20 12:58:08,585 - root - INFO - warmup_proportion: 0.1
+2023-07-20 12:58:08,585 - root - INFO - adam_epsilon: 1e-08
+2023-07-20 12:58:08,585 - root - INFO - verbose_logging: False
+2023-07-20 12:58:08,585 - root - INFO - no_cuda: False
+2023-07-20 12:58:08,585 - root - INFO - seed: 2021
+2023-07-20 12:58:08,585 - root - INFO - gradient_accumulation_steps: 1
+2023-07-20 12:58:08,585 - root - INFO - do_lower_case: True
+2023-07-20 12:58:08,585 - root - INFO - local_rank: -1
+2023-07-20 12:58:08,585 - root - INFO - fp16: False
+2023-07-20 12:58:08,585 - root - INFO - loss_scale: 0
+2023-07-20 12:58:08,585 - root - INFO - save_model_step: 500
+2023-07-20 12:58:08,585 - root - INFO - ------------------------------
+2023-07-20 12:58:08,585 - root - INFO - device: cpu n_gpu: 0, distributed training: False, 16-bits training: False
+2023-07-20 12:58:09,597 - root - INFO - start model from pretrained model!
+2023-07-20 12:58:10,318 - root - INFO - parameter setting...
+2023-07-20 12:58:10,318 - root - INFO - start read example...
+2023-07-20 12:58:10,318 - root - INFO - creating examples from origin file to ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 12:58:10,318 - root - INFO - read examples from origin file
+2023-07-20 13:01:16,514 - root - INFO - ---------------所有配置---------------
+2023-07-20 13:01:16,515 - root - INFO - 所有参数配置如下：
+2023-07-20 13:01:16,515 - root - INFO - bert_model: arvalinno/albert-base-v2-finetuned-squad
+2023-07-20 13:01:16,515 - root - INFO - output_dir: ../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:01:16,515 - root - INFO - checkpoint_path: None
+2023-07-20 13:01:16,515 - root - INFO - warmup_steps: -1
+2023-07-20 13:01:16,515 - root - INFO - model_name: AlbertForQuestionAnsweringQANetWithMask
+2023-07-20 13:01:16,515 - root - INFO - train_file: ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:01:16,515 - root - INFO - overwrite_result: True
+2023-07-20 13:01:16,515 - root - INFO - save_all_steps: True
+2023-07-20 13:01:16,515 - root - INFO - log_prefix: 20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:01:16,515 - root - INFO - log_path: ../../log
+2023-07-20 13:01:16,515 - root - INFO - dev_file: ../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
+2023-07-20 13:01:16,515 - root - INFO - train_supporting_para_file: ../../data/hotpot_data/train_golden.json
+2023-07-20 13:01:16,515 - root - INFO - dev_supporting_para_file: ../../data/selector_data/20211217_second_hop_electra_base_just_paragraph_selector_12_value_setting_result/dev_related.json
+2023-07-20 13:01:16,515 - root - INFO - feature_cache_path: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:01:16,515 - root - INFO - feature_suffix: origin_model
+2023-07-20 13:01:16,515 - root - INFO - max_seq_length: 512
+2023-07-20 13:01:16,515 - root - INFO - doc_stride: 256
+2023-07-20 13:01:16,515 - root - INFO - train_batch_size: 12
+2023-07-20 13:01:16,515 - root - INFO - val_batch_size: 12
+2023-07-20 13:01:16,515 - root - INFO - learning_rate: 1e-05
+2023-07-20 13:01:16,515 - root - INFO - num_train_epochs: 3.0
+2023-07-20 13:01:16,515 - root - INFO - warmup_proportion: 0.1
+2023-07-20 13:01:16,515 - root - INFO - adam_epsilon: 1e-08
+2023-07-20 13:01:16,515 - root - INFO - verbose_logging: False
+2023-07-20 13:01:16,515 - root - INFO - no_cuda: False
+2023-07-20 13:01:16,515 - root - INFO - seed: 2021
+2023-07-20 13:01:16,515 - root - INFO - gradient_accumulation_steps: 1
+2023-07-20 13:01:16,516 - root - INFO - do_lower_case: True
+2023-07-20 13:01:16,516 - root - INFO - local_rank: -1
+2023-07-20 13:01:16,516 - root - INFO - fp16: False
+2023-07-20 13:01:16,516 - root - INFO - loss_scale: 0
+2023-07-20 13:01:16,516 - root - INFO - save_model_step: 500
+2023-07-20 13:01:16,516 - root - INFO - ------------------------------
+2023-07-20 13:01:16,516 - root - INFO - device: cpu n_gpu: 0, distributed training: False, 16-bits training: False
+2023-07-20 13:01:18,024 - root - INFO - start model from pretrained model!
+2023-07-20 13:01:18,741 - root - INFO - parameter setting...
+2023-07-20 13:01:18,741 - root - INFO - start read example...
+2023-07-20 13:01:18,741 - root - INFO - creating examples from origin file to ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:01:18,741 - root - INFO - read examples from origin file
+2023-07-20 13:10:06,301 - root - INFO - ---------------所有配置---------------
+2023-07-20 13:10:06,301 - root - INFO - 所有参数配置如下：
+2023-07-20 13:10:06,301 - root - INFO - bert_model: arvalinno/albert-base-v2-finetuned-squad
+2023-07-20 13:10:06,301 - root - INFO - output_dir: ../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:10:06,301 - root - INFO - checkpoint_path: None
+2023-07-20 13:10:06,301 - root - INFO - warmup_steps: -1
+2023-07-20 13:10:06,301 - root - INFO - model_name: AlbertForQuestionAnsweringQANetWithMask
+2023-07-20 13:10:06,301 - root - INFO - train_file: ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:10:06,301 - root - INFO - overwrite_result: True
+2023-07-20 13:10:06,301 - root - INFO - save_all_steps: True
+2023-07-20 13:10:06,301 - root - INFO - log_prefix: 20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:10:06,301 - root - INFO - log_path: ../../log
+2023-07-20 13:10:06,301 - root - INFO - dev_file: ../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
+2023-07-20 13:10:06,301 - root - INFO - train_supporting_para_file: ../../data/hotpot_data/train_golden.json
+2023-07-20 13:10:06,301 - root - INFO - dev_supporting_para_file: ../../data/selector_data/20211217_second_hop_electra_base_just_paragraph_selector_12_value_setting_result/dev_related.json
+2023-07-20 13:10:06,301 - root - INFO - feature_cache_path: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:10:06,302 - root - INFO - feature_suffix: origin_model
+2023-07-20 13:10:06,302 - root - INFO - max_seq_length: 512
+2023-07-20 13:10:06,302 - root - INFO - doc_stride: 256
+2023-07-20 13:10:06,302 - root - INFO - train_batch_size: 12
+2023-07-20 13:10:06,302 - root - INFO - val_batch_size: 12
+2023-07-20 13:10:06,302 - root - INFO - learning_rate: 1e-05
+2023-07-20 13:10:06,302 - root - INFO - num_train_epochs: 3.0
+2023-07-20 13:10:06,302 - root - INFO - warmup_proportion: 0.1
+2023-07-20 13:10:06,302 - root - INFO - adam_epsilon: 1e-08
+2023-07-20 13:10:06,302 - root - INFO - verbose_logging: False
+2023-07-20 13:10:06,302 - root - INFO - no_cuda: False
+2023-07-20 13:10:06,302 - root - INFO - seed: 2021
+2023-07-20 13:10:06,302 - root - INFO - gradient_accumulation_steps: 1
+2023-07-20 13:10:06,302 - root - INFO - do_lower_case: True
+2023-07-20 13:10:06,302 - root - INFO - local_rank: -1
+2023-07-20 13:10:06,302 - root - INFO - fp16: False
+2023-07-20 13:10:06,302 - root - INFO - loss_scale: 0
+2023-07-20 13:10:06,302 - root - INFO - save_model_step: 500
+2023-07-20 13:10:06,302 - root - INFO - ------------------------------
+2023-07-20 13:10:06,302 - root - INFO - device: cpu n_gpu: 0, distributed training: False, 16-bits training: False
+2023-07-20 13:10:07,337 - root - INFO - start model from pretrained model!
+2023-07-20 13:10:08,089 - root - INFO - parameter setting...
+2023-07-20 13:10:08,090 - root - INFO - start read example...
+2023-07-20 13:10:08,090 - root - INFO - creating examples from origin file to ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:10:08,090 - root - INFO - read examples from origin file
+2023-07-20 13:12:16,049 - root - INFO - ---------------所有配置---------------
+2023-07-20 13:12:16,050 - root - INFO - 所有参数配置如下：
+2023-07-20 13:12:16,050 - root - INFO - bert_model: arvalinno/albert-base-v2-finetuned-squad
+2023-07-20 13:12:16,050 - root - INFO - output_dir: ../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:12:16,050 - root - INFO - checkpoint_path: None
+2023-07-20 13:12:16,050 - root - INFO - warmup_steps: -1
+2023-07-20 13:12:16,050 - root - INFO - model_name: AlbertForQuestionAnsweringQANetWithMask
+2023-07-20 13:12:16,050 - root - INFO - train_file: ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:12:16,050 - root - INFO - overwrite_result: True
+2023-07-20 13:12:16,050 - root - INFO - save_all_steps: True
+2023-07-20 13:12:16,050 - root - INFO - log_prefix: 20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:12:16,050 - root - INFO - log_path: ../../log
+2023-07-20 13:12:16,050 - root - INFO - dev_file: ../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
+2023-07-20 13:12:16,050 - root - INFO - train_supporting_para_file: ../../data/hotpot_data/train_golden.json
+2023-07-20 13:12:16,050 - root - INFO - dev_supporting_para_file: ../../data/selector_data/20211217_second_hop_electra_base_just_paragraph_selector_12_value_setting_result/dev_related.json
+2023-07-20 13:12:16,050 - root - INFO - feature_cache_path: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:12:16,050 - root - INFO - feature_suffix: origin_model
+2023-07-20 13:12:16,050 - root - INFO - max_seq_length: 512
+2023-07-20 13:12:16,050 - root - INFO - doc_stride: 256
+2023-07-20 13:12:16,050 - root - INFO - train_batch_size: 12
+2023-07-20 13:12:16,050 - root - INFO - val_batch_size: 12
+2023-07-20 13:12:16,051 - root - INFO - learning_rate: 1e-05
+2023-07-20 13:12:16,051 - root - INFO - num_train_epochs: 3.0
+2023-07-20 13:12:16,051 - root - INFO - warmup_proportion: 0.1
+2023-07-20 13:12:16,051 - root - INFO - adam_epsilon: 1e-08
+2023-07-20 13:12:16,051 - root - INFO - verbose_logging: False
+2023-07-20 13:12:16,051 - root - INFO - no_cuda: False
+2023-07-20 13:12:16,051 - root - INFO - seed: 2021
+2023-07-20 13:12:16,051 - root - INFO - gradient_accumulation_steps: 1
+2023-07-20 13:12:16,051 - root - INFO - do_lower_case: True
+2023-07-20 13:12:16,051 - root - INFO - local_rank: -1
+2023-07-20 13:12:16,051 - root - INFO - fp16: False
+2023-07-20 13:12:16,051 - root - INFO - loss_scale: 0
+2023-07-20 13:12:16,051 - root - INFO - save_model_step: 500
+2023-07-20 13:12:16,051 - root - INFO - ------------------------------
+2023-07-20 13:12:16,051 - root - INFO - device: cpu n_gpu: 0, distributed training: False, 16-bits training: False
+2023-07-20 13:12:17,080 - root - INFO - start model from pretrained model!
+2023-07-20 13:12:17,812 - root - INFO - parameter setting...
+2023-07-20 13:12:17,812 - root - INFO - start read example...
+2023-07-20 13:12:17,812 - root - INFO - creating examples from origin file to ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:12:17,812 - root - INFO - read examples from origin file
+2023-07-20 13:14:40,801 - root - INFO - ---------------所有配置---------------
+2023-07-20 13:14:40,801 - root - INFO - 所有参数配置如下：
+2023-07-20 13:14:40,801 - root - INFO - bert_model: arvalinno/albert-base-v2-finetuned-squad
+2023-07-20 13:14:40,802 - root - INFO - output_dir: ../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:14:40,802 - root - INFO - checkpoint_path: None
+2023-07-20 13:14:40,802 - root - INFO - warmup_steps: -1
+2023-07-20 13:14:40,802 - root - INFO - model_name: AlbertForQuestionAnsweringQANetWithMask
+2023-07-20 13:14:40,802 - root - INFO - train_file: ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:14:40,802 - root - INFO - overwrite_result: True
+2023-07-20 13:14:40,802 - root - INFO - save_all_steps: True
+2023-07-20 13:14:40,802 - root - INFO - log_prefix: 20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:14:40,802 - root - INFO - log_path: ../../log
+2023-07-20 13:14:40,802 - root - INFO - dev_file: ../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
+2023-07-20 13:14:40,802 - root - INFO - train_supporting_para_file: ../../data/hotpot_data/train_golden.json
+2023-07-20 13:14:40,802 - root - INFO - dev_supporting_para_file: ../../data/selector_data/20211217_second_hop_electra_base_just_paragraph_selector_12_value_setting_result/dev_related.json
+2023-07-20 13:14:40,802 - root - INFO - feature_cache_path: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:14:40,802 - root - INFO - feature_suffix: origin_model
+2023-07-20 13:14:40,802 - root - INFO - max_seq_length: 512
+2023-07-20 13:14:40,802 - root - INFO - doc_stride: 256
+2023-07-20 13:14:40,802 - root - INFO - train_batch_size: 12
+2023-07-20 13:14:40,802 - root - INFO - val_batch_size: 12
+2023-07-20 13:14:40,802 - root - INFO - learning_rate: 1e-05
+2023-07-20 13:14:40,802 - root - INFO - num_train_epochs: 3.0
+2023-07-20 13:14:40,802 - root - INFO - warmup_proportion: 0.1
+2023-07-20 13:14:40,802 - root - INFO - adam_epsilon: 1e-08
+2023-07-20 13:14:40,802 - root - INFO - verbose_logging: False
+2023-07-20 13:14:40,802 - root - INFO - no_cuda: False
+2023-07-20 13:14:40,802 - root - INFO - seed: 2021
+2023-07-20 13:14:40,802 - root - INFO - gradient_accumulation_steps: 1
+2023-07-20 13:14:40,802 - root - INFO - do_lower_case: True
+2023-07-20 13:14:40,802 - root - INFO - local_rank: -1
+2023-07-20 13:14:40,803 - root - INFO - fp16: False
+2023-07-20 13:14:40,803 - root - INFO - loss_scale: 0
+2023-07-20 13:14:40,803 - root - INFO - save_model_step: 500
+2023-07-20 13:14:40,803 - root - INFO - ------------------------------
+2023-07-20 13:14:40,803 - root - INFO - device: cpu n_gpu: 0, distributed training: False, 16-bits training: False
+2023-07-20 13:14:41,861 - root - INFO - start model from pretrained model!
+2023-07-20 13:14:42,580 - root - INFO - parameter setting...
+2023-07-20 13:14:42,581 - root - INFO - start read example...
+2023-07-20 13:14:42,581 - root - INFO - creating examples from origin file to ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:14:42,581 - root - INFO - read examples from origin file
+2023-07-20 13:16:09,741 - root - INFO - ---------------所有配置---------------
+2023-07-20 13:16:09,741 - root - INFO - 所有参数配置如下：
+2023-07-20 13:16:09,741 - root - INFO - bert_model: arvalinno/albert-base-v2-finetuned-squad
+2023-07-20 13:16:09,741 - root - INFO - output_dir: ../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:16:09,742 - root - INFO - checkpoint_path: None
+2023-07-20 13:16:09,742 - root - INFO - warmup_steps: -1
+2023-07-20 13:16:09,742 - root - INFO - model_name: AlbertForQuestionAnsweringQANetWithMask
+2023-07-20 13:16:09,742 - root - INFO - train_file: ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:16:09,742 - root - INFO - overwrite_result: True
+2023-07-20 13:16:09,742 - root - INFO - save_all_steps: True
+2023-07-20 13:16:09,742 - root - INFO - log_prefix: 20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:16:09,742 - root - INFO - log_path: ../../log
+2023-07-20 13:16:09,742 - root - INFO - dev_file: ../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
+2023-07-20 13:16:09,742 - root - INFO - train_supporting_para_file: ../../data/hotpot_data/train_golden.json
+2023-07-20 13:16:09,742 - root - INFO - dev_supporting_para_file: ../../data/selector_data/20211217_second_hop_electra_base_just_paragraph_selector_12_value_setting_result/dev_related.json
+2023-07-20 13:16:09,742 - root - INFO - feature_cache_path: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:16:09,742 - root - INFO - feature_suffix: origin_model
+2023-07-20 13:16:09,742 - root - INFO - max_seq_length: 512
+2023-07-20 13:16:09,742 - root - INFO - doc_stride: 256
+2023-07-20 13:16:09,742 - root - INFO - train_batch_size: 12
+2023-07-20 13:16:09,742 - root - INFO - val_batch_size: 12
+2023-07-20 13:16:09,742 - root - INFO - learning_rate: 1e-05
+2023-07-20 13:16:09,742 - root - INFO - num_train_epochs: 3.0
+2023-07-20 13:16:09,742 - root - INFO - warmup_proportion: 0.1
+2023-07-20 13:16:09,742 - root - INFO - adam_epsilon: 1e-08
+2023-07-20 13:16:09,742 - root - INFO - verbose_logging: False
+2023-07-20 13:16:09,742 - root - INFO - no_cuda: False
+2023-07-20 13:16:09,742 - root - INFO - seed: 2021
+2023-07-20 13:16:09,742 - root - INFO - gradient_accumulation_steps: 1
+2023-07-20 13:16:09,742 - root - INFO - do_lower_case: True
+2023-07-20 13:16:09,742 - root - INFO - local_rank: -1
+2023-07-20 13:16:09,742 - root - INFO - fp16: False
+2023-07-20 13:16:09,742 - root - INFO - loss_scale: 0
+2023-07-20 13:16:09,742 - root - INFO - save_model_step: 500
+2023-07-20 13:16:09,742 - root - INFO - ------------------------------
+2023-07-20 13:16:09,743 - root - INFO - device: cpu n_gpu: 0, distributed training: False, 16-bits training: False
+2023-07-20 13:16:11,048 - root - INFO - start model from pretrained model!
+2023-07-20 13:16:11,763 - root - INFO - parameter setting...
+2023-07-20 13:16:11,763 - root - INFO - start read example...
+2023-07-20 13:16:11,764 - root - INFO - creating examples from origin file to ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:16:11,764 - root - INFO - read examples from origin file
+2023-07-20 13:16:45,988 - root - INFO - ---------------所有配置---------------
+2023-07-20 13:16:45,988 - root - INFO - 所有参数配置如下：
+2023-07-20 13:16:45,988 - root - INFO - bert_model: arvalinno/albert-base-v2-finetuned-squad
+2023-07-20 13:16:45,988 - root - INFO - output_dir: ../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:16:45,988 - root - INFO - checkpoint_path: None
+2023-07-20 13:16:45,988 - root - INFO - warmup_steps: -1
+2023-07-20 13:16:45,988 - root - INFO - model_name: AlbertForQuestionAnsweringQANetWithMask
+2023-07-20 13:16:45,988 - root - INFO - train_file: ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:16:45,988 - root - INFO - overwrite_result: True
+2023-07-20 13:16:45,988 - root - INFO - save_all_steps: True
+2023-07-20 13:16:45,988 - root - INFO - log_prefix: 20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:16:45,988 - root - INFO - log_path: ../../log
+2023-07-20 13:16:45,988 - root - INFO - dev_file: ../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
+2023-07-20 13:16:45,988 - root - INFO - train_supporting_para_file: ../../data/hotpot_data/train_golden.json
+2023-07-20 13:16:45,988 - root - INFO - dev_supporting_para_file: ../../data/selector_data/20211217_second_hop_electra_base_just_paragraph_selector_12_value_setting_result/dev_related.json
+2023-07-20 13:16:45,988 - root - INFO - feature_cache_path: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:16:45,988 - root - INFO - feature_suffix: origin_model
+2023-07-20 13:16:45,988 - root - INFO - max_seq_length: 512
+2023-07-20 13:16:45,989 - root - INFO - doc_stride: 256
+2023-07-20 13:16:45,989 - root - INFO - train_batch_size: 12
+2023-07-20 13:16:45,989 - root - INFO - val_batch_size: 12
+2023-07-20 13:16:45,989 - root - INFO - learning_rate: 1e-05
+2023-07-20 13:16:45,989 - root - INFO - num_train_epochs: 3.0
+2023-07-20 13:16:45,989 - root - INFO - warmup_proportion: 0.1
+2023-07-20 13:16:45,989 - root - INFO - adam_epsilon: 1e-08
+2023-07-20 13:16:45,989 - root - INFO - verbose_logging: False
+2023-07-20 13:16:45,989 - root - INFO - no_cuda: False
+2023-07-20 13:16:45,989 - root - INFO - seed: 2021
+2023-07-20 13:16:45,989 - root - INFO - gradient_accumulation_steps: 1
+2023-07-20 13:16:45,989 - root - INFO - do_lower_case: True
+2023-07-20 13:16:45,989 - root - INFO - local_rank: -1
+2023-07-20 13:16:45,989 - root - INFO - fp16: False
+2023-07-20 13:16:45,989 - root - INFO - loss_scale: 0
+2023-07-20 13:16:45,989 - root - INFO - save_model_step: 500
+2023-07-20 13:16:45,989 - root - INFO - ------------------------------
+2023-07-20 13:16:45,989 - root - INFO - device: cpu n_gpu: 0, distributed training: False, 16-bits training: False
+2023-07-20 13:16:48,026 - root - INFO - start model from pretrained model!
+2023-07-20 13:16:48,740 - root - INFO - parameter setting...
+2023-07-20 13:16:48,740 - root - INFO - start read example...
+2023-07-20 13:16:48,741 - root - INFO - creating examples from origin file to ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:16:48,741 - root - INFO - read examples from origin file
+2023-07-20 13:17:52,898 - root - INFO - ---------------所有配置---------------
+2023-07-20 13:17:52,898 - root - INFO - 所有参数配置如下：
+2023-07-20 13:17:52,898 - root - INFO - bert_model: arvalinno/albert-base-v2-finetuned-squad
+2023-07-20 13:17:52,898 - root - INFO - output_dir: ../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:17:52,898 - root - INFO - checkpoint_path: None
+2023-07-20 13:17:52,898 - root - INFO - warmup_steps: -1
+2023-07-20 13:17:52,898 - root - INFO - model_name: AlbertForQuestionAnsweringQANetWithMask
+2023-07-20 13:17:52,898 - root - INFO - train_file: ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:17:52,898 - root - INFO - overwrite_result: True
+2023-07-20 13:17:52,898 - root - INFO - save_all_steps: True
+2023-07-20 13:17:52,898 - root - INFO - log_prefix: 20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:17:52,899 - root - INFO - log_path: ../../log
+2023-07-20 13:17:52,899 - root - INFO - dev_file: ../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
+2023-07-20 13:17:52,899 - root - INFO - train_supporting_para_file: ../../data/hotpot_data/train_golden.json
+2023-07-20 13:17:52,899 - root - INFO - dev_supporting_para_file: ../../data/selector_data/20211217_second_hop_electra_base_just_paragraph_selector_12_value_setting_result/dev_related.json
+2023-07-20 13:17:52,899 - root - INFO - feature_cache_path: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:17:52,899 - root - INFO - feature_suffix: origin_model
+2023-07-20 13:17:52,899 - root - INFO - max_seq_length: 512
+2023-07-20 13:17:52,899 - root - INFO - doc_stride: 256
+2023-07-20 13:17:52,899 - root - INFO - train_batch_size: 12
+2023-07-20 13:17:52,899 - root - INFO - val_batch_size: 12
+2023-07-20 13:17:52,899 - root - INFO - learning_rate: 1e-05
+2023-07-20 13:17:52,899 - root - INFO - num_train_epochs: 3.0
+2023-07-20 13:17:52,899 - root - INFO - warmup_proportion: 0.1
+2023-07-20 13:17:52,899 - root - INFO - adam_epsilon: 1e-08
+2023-07-20 13:17:52,899 - root - INFO - verbose_logging: False
+2023-07-20 13:17:52,899 - root - INFO - no_cuda: False
+2023-07-20 13:17:52,899 - root - INFO - seed: 2021
+2023-07-20 13:17:52,899 - root - INFO - gradient_accumulation_steps: 1
+2023-07-20 13:17:52,899 - root - INFO - do_lower_case: True
+2023-07-20 13:17:52,899 - root - INFO - local_rank: -1
+2023-07-20 13:17:52,899 - root - INFO - fp16: False
+2023-07-20 13:17:52,899 - root - INFO - loss_scale: 0
+2023-07-20 13:17:52,899 - root - INFO - save_model_step: 500
+2023-07-20 13:17:52,899 - root - INFO - ------------------------------
+2023-07-20 13:17:52,899 - root - INFO - device: cpu n_gpu: 0, distributed training: False, 16-bits training: False
+2023-07-20 13:17:54,968 - root - INFO - start model from pretrained model!
+2023-07-20 13:17:55,682 - root - INFO - parameter setting...
+2023-07-20 13:17:55,682 - root - INFO - start read example...
+2023-07-20 13:17:55,682 - root - INFO - creating examples from origin file to ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:17:55,682 - root - INFO - read examples from origin file
+2023-07-20 13:24:57,744 - root - INFO - ---------------所有配置---------------
+2023-07-20 13:24:57,745 - root - INFO - 所有参数配置如下：
+2023-07-20 13:24:57,745 - root - INFO - bert_model: arvalinno/albert-base-v2-finetuned-squad
+2023-07-20 13:24:57,745 - root - INFO - output_dir: ../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:24:57,745 - root - INFO - checkpoint_path: None
+2023-07-20 13:24:57,745 - root - INFO - warmup_steps: -1
+2023-07-20 13:24:57,745 - root - INFO - model_name: AlbertForQuestionAnsweringQANetWithMask
+2023-07-20 13:24:57,745 - root - INFO - train_file: ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:24:57,745 - root - INFO - overwrite_result: True
+2023-07-20 13:24:57,745 - root - INFO - save_all_steps: True
+2023-07-20 13:24:57,745 - root - INFO - log_prefix: 20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:24:57,745 - root - INFO - log_path: ../../log
+2023-07-20 13:24:57,745 - root - INFO - dev_file: ../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
+2023-07-20 13:24:57,745 - root - INFO - train_supporting_para_file: ../../data/hotpot_data/train_golden.json
+2023-07-20 13:24:57,745 - root - INFO - dev_supporting_para_file: ../../data/selector_data/20211217_second_hop_electra_base_just_paragraph_selector_12_value_setting_result/dev_related.json
+2023-07-20 13:24:57,745 - root - INFO - feature_cache_path: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:24:57,745 - root - INFO - feature_suffix: origin_model
+2023-07-20 13:24:57,745 - root - INFO - max_seq_length: 512
+2023-07-20 13:24:57,745 - root - INFO - doc_stride: 256
+2023-07-20 13:24:57,745 - root - INFO - train_batch_size: 12
+2023-07-20 13:24:57,745 - root - INFO - val_batch_size: 12
+2023-07-20 13:24:57,745 - root - INFO - learning_rate: 1e-05
+2023-07-20 13:24:57,745 - root - INFO - num_train_epochs: 3.0
+2023-07-20 13:24:57,745 - root - INFO - warmup_proportion: 0.1
+2023-07-20 13:24:57,746 - root - INFO - adam_epsilon: 1e-08
+2023-07-20 13:24:57,746 - root - INFO - verbose_logging: False
+2023-07-20 13:24:57,746 - root - INFO - no_cuda: False
+2023-07-20 13:24:57,746 - root - INFO - seed: 2021
+2023-07-20 13:24:57,746 - root - INFO - gradient_accumulation_steps: 1
+2023-07-20 13:24:57,746 - root - INFO - do_lower_case: True
+2023-07-20 13:24:57,746 - root - INFO - local_rank: -1
+2023-07-20 13:24:57,746 - root - INFO - fp16: False
+2023-07-20 13:24:57,746 - root - INFO - loss_scale: 0
+2023-07-20 13:24:57,746 - root - INFO - save_model_step: 500
+2023-07-20 13:24:57,746 - root - INFO - ------------------------------
+2023-07-20 13:24:57,746 - root - INFO - device: cpu n_gpu: 0, distributed training: False, 16-bits training: False
+2023-07-20 13:25:01,006 - root - INFO - start model from pretrained model!
+2023-07-20 13:25:01,786 - root - INFO - parameter setting...
+2023-07-20 13:25:01,787 - root - INFO - start read example...
+2023-07-20 13:25:01,787 - root - INFO - creating examples from origin file to ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:25:01,787 - root - INFO - read examples from origin file
+2023-07-20 13:25:47,064 - root - INFO - ---------------所有配置---------------
+2023-07-20 13:25:47,064 - root - INFO - 所有参数配置如下：
+2023-07-20 13:25:47,064 - root - INFO - bert_model: arvalinno/albert-base-v2-finetuned-squad
+2023-07-20 13:25:47,064 - root - INFO - output_dir: ../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:25:47,064 - root - INFO - checkpoint_path: None
+2023-07-20 13:25:47,064 - root - INFO - warmup_steps: -1
+2023-07-20 13:25:47,064 - root - INFO - model_name: AlbertForQuestionAnsweringQANetWithMask
+2023-07-20 13:25:47,064 - root - INFO - train_file: ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:25:47,064 - root - INFO - overwrite_result: True
+2023-07-20 13:25:47,064 - root - INFO - save_all_steps: True
+2023-07-20 13:25:47,064 - root - INFO - log_prefix: 20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:25:47,064 - root - INFO - log_path: ../../log
+2023-07-20 13:25:47,064 - root - INFO - dev_file: ../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
+2023-07-20 13:25:47,064 - root - INFO - train_supporting_para_file: ../../data/hotpot_data/train_golden.json
+2023-07-20 13:25:47,064 - root - INFO - dev_supporting_para_file: ../../data/selector_data/20211217_second_hop_electra_base_just_paragraph_selector_12_value_setting_result/dev_related.json
+2023-07-20 13:25:47,064 - root - INFO - feature_cache_path: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:25:47,064 - root - INFO - feature_suffix: origin_model
+2023-07-20 13:25:47,064 - root - INFO - max_seq_length: 512
+2023-07-20 13:25:47,064 - root - INFO - doc_stride: 256
+2023-07-20 13:25:47,064 - root - INFO - train_batch_size: 12
+2023-07-20 13:25:47,064 - root - INFO - val_batch_size: 12
+2023-07-20 13:25:47,064 - root - INFO - learning_rate: 1e-05
+2023-07-20 13:25:47,064 - root - INFO - num_train_epochs: 3.0
+2023-07-20 13:25:47,064 - root - INFO - warmup_proportion: 0.1
+2023-07-20 13:25:47,065 - root - INFO - adam_epsilon: 1e-08
+2023-07-20 13:25:47,065 - root - INFO - verbose_logging: False
+2023-07-20 13:25:47,065 - root - INFO - no_cuda: False
+2023-07-20 13:25:47,065 - root - INFO - seed: 2021
+2023-07-20 13:25:47,065 - root - INFO - gradient_accumulation_steps: 1
+2023-07-20 13:25:47,065 - root - INFO - do_lower_case: True
+2023-07-20 13:25:47,065 - root - INFO - local_rank: -1
+2023-07-20 13:25:47,065 - root - INFO - fp16: False
+2023-07-20 13:25:47,065 - root - INFO - loss_scale: 0
+2023-07-20 13:25:47,065 - root - INFO - save_model_step: 500
+2023-07-20 13:25:47,065 - root - INFO - ------------------------------
+2023-07-20 13:25:47,065 - root - INFO - device: cpu n_gpu: 0, distributed training: False, 16-bits training: False
+2023-07-20 13:25:48,359 - root - INFO - start model from pretrained model!
+2023-07-20 13:25:49,080 - root - INFO - parameter setting...
+2023-07-20 13:25:49,081 - root - INFO - start read example...
+2023-07-20 13:25:49,081 - root - INFO - creating examples from origin file to ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:25:49,081 - root - INFO - read examples from origin file
+2023-07-20 13:28:20,393 - root - INFO - ---------------所有配置---------------
+2023-07-20 13:28:20,393 - root - INFO - 所有参数配置如下：
+2023-07-20 13:28:20,393 - root - INFO - bert_model: arvalinno/albert-base-v2-finetuned-squad
+2023-07-20 13:28:20,393 - root - INFO - output_dir: ../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:28:20,393 - root - INFO - checkpoint_path: None
+2023-07-20 13:28:20,393 - root - INFO - warmup_steps: -1
+2023-07-20 13:28:20,393 - root - INFO - model_name: AlbertForQuestionAnsweringQANetWithMask
+2023-07-20 13:28:20,393 - root - INFO - train_file: ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:28:20,393 - root - INFO - overwrite_result: True
+2023-07-20 13:28:20,393 - root - INFO - save_all_steps: True
+2023-07-20 13:28:20,393 - root - INFO - log_prefix: 20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:28:20,393 - root - INFO - log_path: ../../log
+2023-07-20 13:28:20,393 - root - INFO - dev_file: ../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
+2023-07-20 13:28:20,393 - root - INFO - train_supporting_para_file: ../../data/hotpot_data/train_golden.json
+2023-07-20 13:28:20,393 - root - INFO - dev_supporting_para_file: ../../data/selector_data/20211217_second_hop_electra_base_just_paragraph_selector_12_value_setting_result/dev_related.json
+2023-07-20 13:28:20,393 - root - INFO - feature_cache_path: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:28:20,394 - root - INFO - feature_suffix: origin_model
+2023-07-20 13:28:20,394 - root - INFO - max_seq_length: 512
+2023-07-20 13:28:20,394 - root - INFO - doc_stride: 256
+2023-07-20 13:28:20,394 - root - INFO - train_batch_size: 12
+2023-07-20 13:28:20,394 - root - INFO - val_batch_size: 12
+2023-07-20 13:28:20,394 - root - INFO - learning_rate: 1e-05
+2023-07-20 13:28:20,394 - root - INFO - num_train_epochs: 3.0
+2023-07-20 13:28:20,394 - root - INFO - warmup_proportion: 0.1
+2023-07-20 13:28:20,394 - root - INFO - adam_epsilon: 1e-08
+2023-07-20 13:28:20,394 - root - INFO - verbose_logging: False
+2023-07-20 13:28:20,394 - root - INFO - no_cuda: False
+2023-07-20 13:28:20,394 - root - INFO - seed: 2021
+2023-07-20 13:28:20,394 - root - INFO - gradient_accumulation_steps: 1
+2023-07-20 13:28:20,394 - root - INFO - do_lower_case: True
+2023-07-20 13:28:20,394 - root - INFO - local_rank: -1
+2023-07-20 13:28:20,394 - root - INFO - fp16: False
+2023-07-20 13:28:20,394 - root - INFO - loss_scale: 0
+2023-07-20 13:28:20,394 - root - INFO - save_model_step: 500
+2023-07-20 13:28:20,394 - root - INFO - ------------------------------
+2023-07-20 13:28:20,394 - root - INFO - device: cpu n_gpu: 0, distributed training: False, 16-bits training: False
+2023-07-20 13:28:21,466 - root - INFO - start model from pretrained model!
+2023-07-20 13:28:22,220 - root - INFO - parameter setting...
+2023-07-20 13:28:22,220 - root - INFO - start read example...
+2023-07-20 13:28:22,220 - root - INFO - creating examples from origin file to ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:28:22,220 - root - INFO - read examples from origin file
+2023-07-20 13:29:55,327 - root - INFO - ---------------所有配置---------------
+2023-07-20 13:29:55,327 - root - INFO - 所有参数配置如下：
+2023-07-20 13:29:55,327 - root - INFO - bert_model: arvalinno/albert-base-v2-finetuned-squad
+2023-07-20 13:29:55,327 - root - INFO - output_dir: ../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:29:55,327 - root - INFO - checkpoint_path: None
+2023-07-20 13:29:55,328 - root - INFO - warmup_steps: -1
+2023-07-20 13:29:55,328 - root - INFO - model_name: AlbertForQuestionAnsweringQANetWithMask
+2023-07-20 13:29:55,328 - root - INFO - train_file: ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:29:55,328 - root - INFO - overwrite_result: True
+2023-07-20 13:29:55,328 - root - INFO - save_all_steps: True
+2023-07-20 13:29:55,328 - root - INFO - log_prefix: 20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:29:55,328 - root - INFO - log_path: ../../log
+2023-07-20 13:29:55,328 - root - INFO - dev_file: ../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
+2023-07-20 13:29:55,328 - root - INFO - train_supporting_para_file: ../../data/hotpot_data/train_golden.json
+2023-07-20 13:29:55,328 - root - INFO - dev_supporting_para_file: ../../data/selector_data/20211217_second_hop_electra_base_just_paragraph_selector_12_value_setting_result/dev_related.json
+2023-07-20 13:29:55,328 - root - INFO - feature_cache_path: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:29:55,328 - root - INFO - feature_suffix: origin_model
+2023-07-20 13:29:55,328 - root - INFO - max_seq_length: 512
+2023-07-20 13:29:55,328 - root - INFO - doc_stride: 256
+2023-07-20 13:29:55,328 - root - INFO - train_batch_size: 12
+2023-07-20 13:29:55,328 - root - INFO - val_batch_size: 12
+2023-07-20 13:29:55,328 - root - INFO - learning_rate: 1e-05
+2023-07-20 13:29:55,328 - root - INFO - num_train_epochs: 3.0
+2023-07-20 13:29:55,328 - root - INFO - warmup_proportion: 0.1
+2023-07-20 13:29:55,328 - root - INFO - adam_epsilon: 1e-08
+2023-07-20 13:29:55,328 - root - INFO - verbose_logging: False
+2023-07-20 13:29:55,328 - root - INFO - no_cuda: False
+2023-07-20 13:29:55,328 - root - INFO - seed: 2021
+2023-07-20 13:29:55,328 - root - INFO - gradient_accumulation_steps: 1
+2023-07-20 13:29:55,328 - root - INFO - do_lower_case: True
+2023-07-20 13:29:55,328 - root - INFO - local_rank: -1
+2023-07-20 13:29:55,328 - root - INFO - fp16: False
+2023-07-20 13:29:55,328 - root - INFO - loss_scale: 0
+2023-07-20 13:29:55,328 - root - INFO - save_model_step: 500
+2023-07-20 13:29:55,328 - root - INFO - ------------------------------
+2023-07-20 13:29:55,329 - root - INFO - device: cpu n_gpu: 0, distributed training: False, 16-bits training: False
+2023-07-20 13:29:56,297 - root - INFO - start model from pretrained model!
+2023-07-20 13:29:57,018 - root - INFO - parameter setting...
+2023-07-20 13:29:57,018 - root - INFO - start read example...
+2023-07-20 13:29:57,018 - root - INFO - creating examples from origin file to ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:29:57,018 - root - INFO - read examples from origin file
+2023-07-20 13:33:48,898 - root - INFO - ---------------所有配置---------------
+2023-07-20 13:33:48,898 - root - INFO - 所有参数配置如下：
+2023-07-20 13:33:48,898 - root - INFO - bert_model: arvalinno/albert-base-v2-finetuned-squad
+2023-07-20 13:33:48,898 - root - INFO - output_dir: ../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:33:48,898 - root - INFO - checkpoint_path: None
+2023-07-20 13:33:48,898 - root - INFO - warmup_steps: -1
+2023-07-20 13:33:48,898 - root - INFO - model_name: AlbertForQuestionAnsweringQANetWithMask
+2023-07-20 13:33:48,898 - root - INFO - train_file: ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:33:48,898 - root - INFO - overwrite_result: True
+2023-07-20 13:33:48,898 - root - INFO - save_all_steps: True
+2023-07-20 13:33:48,898 - root - INFO - log_prefix: 20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:33:48,898 - root - INFO - log_path: ../../log
+2023-07-20 13:33:48,898 - root - INFO - dev_file: ../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
+2023-07-20 13:33:48,898 - root - INFO - train_supporting_para_file: ../../data/hotpot_data/train_golden.json
+2023-07-20 13:33:48,898 - root - INFO - dev_supporting_para_file: ../../data/selector_data/20211217_second_hop_electra_base_just_paragraph_selector_12_value_setting_result/dev_related.json
+2023-07-20 13:33:48,898 - root - INFO - feature_cache_path: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:33:48,898 - root - INFO - feature_suffix: origin_model
+2023-07-20 13:33:48,898 - root - INFO - max_seq_length: 512
+2023-07-20 13:33:48,898 - root - INFO - doc_stride: 256
+2023-07-20 13:33:48,898 - root - INFO - train_batch_size: 12
+2023-07-20 13:33:48,898 - root - INFO - val_batch_size: 12
+2023-07-20 13:33:48,898 - root - INFO - learning_rate: 1e-05
+2023-07-20 13:33:48,898 - root - INFO - num_train_epochs: 3.0
+2023-07-20 13:33:48,898 - root - INFO - warmup_proportion: 0.1
+2023-07-20 13:33:48,899 - root - INFO - adam_epsilon: 1e-08
+2023-07-20 13:33:48,899 - root - INFO - verbose_logging: False
+2023-07-20 13:33:48,899 - root - INFO - no_cuda: False
+2023-07-20 13:33:48,899 - root - INFO - seed: 2021
+2023-07-20 13:33:48,899 - root - INFO - gradient_accumulation_steps: 1
+2023-07-20 13:33:48,899 - root - INFO - do_lower_case: True
+2023-07-20 13:33:48,899 - root - INFO - local_rank: -1
+2023-07-20 13:33:48,899 - root - INFO - fp16: False
+2023-07-20 13:33:48,899 - root - INFO - loss_scale: 0
+2023-07-20 13:33:48,899 - root - INFO - save_model_step: 500
+2023-07-20 13:33:48,899 - root - INFO - ------------------------------
+2023-07-20 13:33:48,899 - root - INFO - device: cpu n_gpu: 0, distributed training: False, 16-bits training: False
+2023-07-20 13:33:49,943 - root - INFO - start model from pretrained model!
+2023-07-20 13:33:50,715 - root - INFO - parameter setting...
+2023-07-20 13:33:50,715 - root - INFO - start read example...
+2023-07-20 13:33:50,715 - root - INFO - creating examples from origin file to ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:33:50,716 - root - INFO - read examples from origin file
+2023-07-20 13:34:50,194 - root - INFO - ---------------所有配置---------------
+2023-07-20 13:34:50,195 - root - INFO - 所有参数配置如下：
+2023-07-20 13:34:50,195 - root - INFO - bert_model: arvalinno/albert-base-v2-finetuned-squad
+2023-07-20 13:34:50,195 - root - INFO - output_dir: ../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:34:50,195 - root - INFO - checkpoint_path: None
+2023-07-20 13:34:50,195 - root - INFO - warmup_steps: -1
+2023-07-20 13:34:50,195 - root - INFO - model_name: AlbertForQuestionAnsweringQANetWithMask
+2023-07-20 13:34:50,195 - root - INFO - train_file: ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:34:50,195 - root - INFO - overwrite_result: True
+2023-07-20 13:34:50,195 - root - INFO - save_all_steps: True
+2023-07-20 13:34:50,195 - root - INFO - log_prefix: 20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:34:50,195 - root - INFO - log_path: ../../log
+2023-07-20 13:34:50,195 - root - INFO - dev_file: ../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
+2023-07-20 13:34:50,195 - root - INFO - train_supporting_para_file: ../../data/hotpot_data/train_golden.json
+2023-07-20 13:34:50,195 - root - INFO - dev_supporting_para_file: ../../data/selector_data/20211217_second_hop_electra_base_just_paragraph_selector_12_value_setting_result/dev_related.json
+2023-07-20 13:34:50,195 - root - INFO - feature_cache_path: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:34:50,195 - root - INFO - feature_suffix: origin_model
+2023-07-20 13:34:50,196 - root - INFO - max_seq_length: 512
+2023-07-20 13:34:50,196 - root - INFO - doc_stride: 256
+2023-07-20 13:34:50,196 - root - INFO - train_batch_size: 12
+2023-07-20 13:34:50,196 - root - INFO - val_batch_size: 12
+2023-07-20 13:34:50,196 - root - INFO - learning_rate: 1e-05
+2023-07-20 13:34:50,196 - root - INFO - num_train_epochs: 3.0
+2023-07-20 13:34:50,196 - root - INFO - warmup_proportion: 0.1
+2023-07-20 13:34:50,196 - root - INFO - adam_epsilon: 1e-08
+2023-07-20 13:34:50,196 - root - INFO - verbose_logging: False
+2023-07-20 13:34:50,196 - root - INFO - no_cuda: False
+2023-07-20 13:34:50,196 - root - INFO - seed: 2021
+2023-07-20 13:34:50,196 - root - INFO - gradient_accumulation_steps: 1
+2023-07-20 13:34:50,196 - root - INFO - do_lower_case: True
+2023-07-20 13:34:50,196 - root - INFO - local_rank: -1
+2023-07-20 13:34:50,196 - root - INFO - fp16: False
+2023-07-20 13:34:50,196 - root - INFO - loss_scale: 0
+2023-07-20 13:34:50,196 - root - INFO - save_model_step: 500
+2023-07-20 13:34:50,196 - root - INFO - ------------------------------
+2023-07-20 13:34:50,196 - root - INFO - device: cpu n_gpu: 0, distributed training: False, 16-bits training: False
+2023-07-20 13:34:51,582 - root - INFO - start model from pretrained model!
+2023-07-20 13:34:52,404 - root - INFO - parameter setting...
+2023-07-20 13:34:52,404 - root - INFO - start read example...
+2023-07-20 13:34:52,404 - root - INFO - creating examples from origin file to ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:34:52,404 - root - INFO - read examples from origin file
+2023-07-20 13:37:31,897 - root - INFO - ---------------所有配置---------------
+2023-07-20 13:37:31,897 - root - INFO - 所有参数配置如下：
+2023-07-20 13:37:31,897 - root - INFO - bert_model: arvalinno/albert-base-v2-finetuned-squad
+2023-07-20 13:37:31,897 - root - INFO - output_dir: ../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:37:31,897 - root - INFO - checkpoint_path: None
+2023-07-20 13:37:31,897 - root - INFO - warmup_steps: -1
+2023-07-20 13:37:31,897 - root - INFO - model_name: AlbertForQuestionAnsweringQANetWithMask
+2023-07-20 13:37:31,897 - root - INFO - train_file: ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:37:31,897 - root - INFO - overwrite_result: True
+2023-07-20 13:37:31,897 - root - INFO - save_all_steps: True
+2023-07-20 13:37:31,897 - root - INFO - log_prefix: 20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:37:31,897 - root - INFO - log_path: ../../log
+2023-07-20 13:37:31,897 - root - INFO - dev_file: ../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
+2023-07-20 13:37:31,897 - root - INFO - train_supporting_para_file: ../../data/hotpot_data/train_golden.json
+2023-07-20 13:37:31,897 - root - INFO - dev_supporting_para_file: ../../data/selector_data/20211217_second_hop_electra_base_just_paragraph_selector_12_value_setting_result/dev_related.json
+2023-07-20 13:37:31,897 - root - INFO - feature_cache_path: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:37:31,897 - root - INFO - feature_suffix: origin_model
+2023-07-20 13:37:31,897 - root - INFO - max_seq_length: 512
+2023-07-20 13:37:31,897 - root - INFO - doc_stride: 256
+2023-07-20 13:37:31,897 - root - INFO - train_batch_size: 12
+2023-07-20 13:37:31,897 - root - INFO - val_batch_size: 12
+2023-07-20 13:37:31,897 - root - INFO - learning_rate: 1e-05
+2023-07-20 13:37:31,897 - root - INFO - num_train_epochs: 3.0
+2023-07-20 13:37:31,897 - root - INFO - warmup_proportion: 0.1
+2023-07-20 13:37:31,897 - root - INFO - adam_epsilon: 1e-08
+2023-07-20 13:37:31,897 - root - INFO - verbose_logging: False
+2023-07-20 13:37:31,897 - root - INFO - no_cuda: False
+2023-07-20 13:37:31,897 - root - INFO - seed: 2021
+2023-07-20 13:37:31,898 - root - INFO - gradient_accumulation_steps: 1
+2023-07-20 13:37:31,898 - root - INFO - do_lower_case: True
+2023-07-20 13:37:31,898 - root - INFO - local_rank: -1
+2023-07-20 13:37:31,898 - root - INFO - fp16: False
+2023-07-20 13:37:31,898 - root - INFO - loss_scale: 0
+2023-07-20 13:37:31,898 - root - INFO - save_model_step: 500
+2023-07-20 13:37:31,898 - root - INFO - ------------------------------
+2023-07-20 13:37:31,898 - root - INFO - device: cpu n_gpu: 0, distributed training: False, 16-bits training: False
+2023-07-20 13:37:32,883 - root - INFO - start model from pretrained model!
+2023-07-20 13:37:33,616 - root - INFO - parameter setting...
+2023-07-20 13:37:33,617 - root - INFO - start read example...
+2023-07-20 13:37:33,617 - root - INFO - creating examples from origin file to ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:37:33,617 - root - INFO - read examples from origin file
+2023-07-20 13:45:02,839 - root - INFO - ---------------所有配置---------------
+2023-07-20 13:45:02,840 - root - INFO - 所有参数配置如下：
+2023-07-20 13:45:02,840 - root - INFO - bert_model: arvalinno/albert-base-v2-finetuned-squad
+2023-07-20 13:45:02,840 - root - INFO - output_dir: ../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:45:02,840 - root - INFO - checkpoint_path: None
+2023-07-20 13:45:02,840 - root - INFO - warmup_steps: -1
+2023-07-20 13:45:02,840 - root - INFO - model_name: AlbertForQuestionAnsweringQANetWithMask
+2023-07-20 13:45:02,840 - root - INFO - train_file: ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:45:02,840 - root - INFO - overwrite_result: True
+2023-07-20 13:45:02,840 - root - INFO - save_all_steps: True
+2023-07-20 13:45:02,840 - root - INFO - log_prefix: 20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:45:02,840 - root - INFO - log_path: ../../log
+2023-07-20 13:45:02,840 - root - INFO - dev_file: ../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
+2023-07-20 13:45:02,840 - root - INFO - train_supporting_para_file: ../../data/hotpot_data/train_golden.json
+2023-07-20 13:45:02,840 - root - INFO - dev_supporting_para_file: ../../data/selector_data/20211217_second_hop_electra_base_just_paragraph_selector_12_value_setting_result/dev_related.json
+2023-07-20 13:45:02,840 - root - INFO - feature_cache_path: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:45:02,840 - root - INFO - feature_suffix: origin_model
+2023-07-20 13:45:02,840 - root - INFO - max_seq_length: 512
+2023-07-20 13:45:02,840 - root - INFO - doc_stride: 256
+2023-07-20 13:45:02,840 - root - INFO - train_batch_size: 12
+2023-07-20 13:45:02,840 - root - INFO - val_batch_size: 12
+2023-07-20 13:45:02,841 - root - INFO - learning_rate: 1e-05
+2023-07-20 13:45:02,841 - root - INFO - num_train_epochs: 3.0
+2023-07-20 13:45:02,841 - root - INFO - warmup_proportion: 0.1
+2023-07-20 13:45:02,841 - root - INFO - adam_epsilon: 1e-08
+2023-07-20 13:45:02,841 - root - INFO - verbose_logging: False
+2023-07-20 13:45:02,841 - root - INFO - no_cuda: False
+2023-07-20 13:45:02,841 - root - INFO - seed: 2021
+2023-07-20 13:45:02,841 - root - INFO - gradient_accumulation_steps: 1
+2023-07-20 13:45:02,841 - root - INFO - do_lower_case: True
+2023-07-20 13:45:02,841 - root - INFO - local_rank: -1
+2023-07-20 13:45:02,841 - root - INFO - fp16: False
+2023-07-20 13:45:02,841 - root - INFO - loss_scale: 0
+2023-07-20 13:45:02,841 - root - INFO - save_model_step: 500
+2023-07-20 13:45:02,841 - root - INFO - ------------------------------
+2023-07-20 13:45:02,841 - root - INFO - device: cpu n_gpu: 0, distributed training: False, 16-bits training: False
+2023-07-20 13:45:04,292 - root - INFO - start model from pretrained model!
+2023-07-20 13:45:05,049 - root - INFO - parameter setting...
+2023-07-20 13:45:05,050 - root - INFO - start read example...
+2023-07-20 13:45:05,050 - root - INFO - creating examples from origin file to ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:45:05,050 - root - INFO - read examples from origin file
+2023-07-20 13:48:44,956 - root - INFO - ---------------所有配置---------------
+2023-07-20 13:48:44,956 - root - INFO - 所有参数配置如下：
+2023-07-20 13:48:44,956 - root - INFO - bert_model: arvalinno/albert-base-v2-finetuned-squad
+2023-07-20 13:48:44,956 - root - INFO - output_dir: ../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:48:44,956 - root - INFO - checkpoint_path: None
+2023-07-20 13:48:44,956 - root - INFO - warmup_steps: -1
+2023-07-20 13:48:44,956 - root - INFO - model_name: AlbertForQuestionAnsweringQANetWithMask
+2023-07-20 13:48:44,956 - root - INFO - train_file: ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:48:44,956 - root - INFO - overwrite_result: True
+2023-07-20 13:48:44,956 - root - INFO - save_all_steps: True
+2023-07-20 13:48:44,956 - root - INFO - log_prefix: 20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:48:44,956 - root - INFO - log_path: ../../log
+2023-07-20 13:48:44,956 - root - INFO - dev_file: ../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
+2023-07-20 13:48:44,957 - root - INFO - train_supporting_para_file: ../../data/hotpot_data/train_golden.json
+2023-07-20 13:48:44,957 - root - INFO - dev_supporting_para_file: ../../data/selector_data/20211217_second_hop_electra_base_just_paragraph_selector_12_value_setting_result/dev_related.json
+2023-07-20 13:48:44,957 - root - INFO - feature_cache_path: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:48:44,957 - root - INFO - feature_suffix: origin_model
+2023-07-20 13:48:44,957 - root - INFO - max_seq_length: 512
+2023-07-20 13:48:44,957 - root - INFO - doc_stride: 256
+2023-07-20 13:48:44,957 - root - INFO - train_batch_size: 12
+2023-07-20 13:48:44,957 - root - INFO - val_batch_size: 12
+2023-07-20 13:48:44,957 - root - INFO - learning_rate: 1e-05
+2023-07-20 13:48:44,957 - root - INFO - num_train_epochs: 3.0
+2023-07-20 13:48:44,957 - root - INFO - warmup_proportion: 0.1
+2023-07-20 13:48:44,957 - root - INFO - adam_epsilon: 1e-08
+2023-07-20 13:48:44,957 - root - INFO - verbose_logging: False
+2023-07-20 13:48:44,957 - root - INFO - no_cuda: False
+2023-07-20 13:48:44,957 - root - INFO - seed: 2021
+2023-07-20 13:48:44,957 - root - INFO - gradient_accumulation_steps: 1
+2023-07-20 13:48:44,957 - root - INFO - do_lower_case: True
+2023-07-20 13:48:44,957 - root - INFO - local_rank: -1
+2023-07-20 13:48:44,957 - root - INFO - fp16: False
+2023-07-20 13:48:44,957 - root - INFO - loss_scale: 0
+2023-07-20 13:48:44,957 - root - INFO - save_model_step: 500
+2023-07-20 13:48:44,957 - root - INFO - ------------------------------
+2023-07-20 13:48:44,958 - root - INFO - device: cpu n_gpu: 0, distributed training: False, 16-bits training: False
+2023-07-20 13:48:46,070 - root - INFO - start model from pretrained model!
+2023-07-20 13:48:46,795 - root - INFO - parameter setting...
+2023-07-20 13:48:46,796 - root - INFO - start read example...
+2023-07-20 13:48:46,796 - root - INFO - creating examples from origin file to ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:48:46,796 - root - INFO - read examples from origin file
+2023-07-20 13:49:38,644 - root - INFO - ---------------所有配置---------------
+2023-07-20 13:49:38,644 - root - INFO - 所有参数配置如下：
+2023-07-20 13:49:38,644 - root - INFO - bert_model: arvalinno/albert-base-v2-finetuned-squad
+2023-07-20 13:49:38,644 - root - INFO - output_dir: ../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:49:38,644 - root - INFO - checkpoint_path: None
+2023-07-20 13:49:38,644 - root - INFO - warmup_steps: -1
+2023-07-20 13:49:38,644 - root - INFO - model_name: AlbertForQuestionAnsweringQANetWithMask
+2023-07-20 13:49:38,644 - root - INFO - train_file: ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:49:38,644 - root - INFO - overwrite_result: True
+2023-07-20 13:49:38,644 - root - INFO - save_all_steps: True
+2023-07-20 13:49:38,644 - root - INFO - log_prefix: 20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:49:38,644 - root - INFO - log_path: ../../log
+2023-07-20 13:49:38,644 - root - INFO - dev_file: ../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
+2023-07-20 13:49:38,644 - root - INFO - train_supporting_para_file: ../../data/hotpot_data/train_golden.json
+2023-07-20 13:49:38,644 - root - INFO - dev_supporting_para_file: ../../data/selector_data/20211217_second_hop_electra_base_just_paragraph_selector_12_value_setting_result/dev_related.json
+2023-07-20 13:49:38,644 - root - INFO - feature_cache_path: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:49:38,644 - root - INFO - feature_suffix: origin_model
+2023-07-20 13:49:38,644 - root - INFO - max_seq_length: 512
+2023-07-20 13:49:38,644 - root - INFO - doc_stride: 256
+2023-07-20 13:49:38,644 - root - INFO - train_batch_size: 12
+2023-07-20 13:49:38,644 - root - INFO - val_batch_size: 12
+2023-07-20 13:49:38,644 - root - INFO - learning_rate: 1e-05
+2023-07-20 13:49:38,644 - root - INFO - num_train_epochs: 3.0
+2023-07-20 13:49:38,644 - root - INFO - warmup_proportion: 0.1
+2023-07-20 13:49:38,644 - root - INFO - adam_epsilon: 1e-08
+2023-07-20 13:49:38,644 - root - INFO - verbose_logging: False
+2023-07-20 13:49:38,644 - root - INFO - no_cuda: False
+2023-07-20 13:49:38,645 - root - INFO - seed: 2021
+2023-07-20 13:49:38,645 - root - INFO - gradient_accumulation_steps: 1
+2023-07-20 13:49:38,645 - root - INFO - do_lower_case: True
+2023-07-20 13:49:38,645 - root - INFO - local_rank: -1
+2023-07-20 13:49:38,645 - root - INFO - fp16: False
+2023-07-20 13:49:38,645 - root - INFO - loss_scale: 0
+2023-07-20 13:49:38,645 - root - INFO - save_model_step: 500
+2023-07-20 13:49:38,645 - root - INFO - ------------------------------
+2023-07-20 13:49:38,645 - root - INFO - device: cpu n_gpu: 0, distributed training: False, 16-bits training: False
+2023-07-20 13:49:39,942 - root - INFO - start model from pretrained model!
+2023-07-20 13:49:40,665 - root - INFO - parameter setting...
+2023-07-20 13:49:40,666 - root - INFO - start read example...
+2023-07-20 13:49:40,666 - root - INFO - creating examples from origin file to ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:49:40,666 - root - INFO - read examples from origin file
+2023-07-20 13:55:00,180 - root - INFO - ---------------所有配置---------------
+2023-07-20 13:55:00,180 - root - INFO - 所有参数配置如下：
+2023-07-20 13:55:00,180 - root - INFO - bert_model: arvalinno/albert-base-v2-finetuned-squad
+2023-07-20 13:55:00,180 - root - INFO - output_dir: ../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:55:00,180 - root - INFO - checkpoint_path: None
+2023-07-20 13:55:00,180 - root - INFO - warmup_steps: -1
+2023-07-20 13:55:00,180 - root - INFO - model_name: AlbertForQuestionAnsweringQANetWithMask
+2023-07-20 13:55:00,180 - root - INFO - train_file: ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:55:00,180 - root - INFO - overwrite_result: True
+2023-07-20 13:55:00,180 - root - INFO - save_all_steps: True
+2023-07-20 13:55:00,180 - root - INFO - log_prefix: 20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:55:00,180 - root - INFO - log_path: ../../log
+2023-07-20 13:55:00,180 - root - INFO - dev_file: ../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
+2023-07-20 13:55:00,180 - root - INFO - train_supporting_para_file: ../../data/hotpot_data/train_golden.json
+2023-07-20 13:55:00,180 - root - INFO - dev_supporting_para_file: ../../data/selector_data/20211217_second_hop_electra_base_just_paragraph_selector_12_value_setting_result/dev_related.json
+2023-07-20 13:55:00,181 - root - INFO - feature_cache_path: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 13:55:00,181 - root - INFO - feature_suffix: origin_model
+2023-07-20 13:55:00,181 - root - INFO - max_seq_length: 512
+2023-07-20 13:55:00,181 - root - INFO - doc_stride: 256
+2023-07-20 13:55:00,181 - root - INFO - train_batch_size: 12
+2023-07-20 13:55:00,181 - root - INFO - val_batch_size: 12
+2023-07-20 13:55:00,181 - root - INFO - learning_rate: 1e-05
+2023-07-20 13:55:00,181 - root - INFO - num_train_epochs: 3.0
+2023-07-20 13:55:00,181 - root - INFO - warmup_proportion: 0.1
+2023-07-20 13:55:00,181 - root - INFO - adam_epsilon: 1e-08
+2023-07-20 13:55:00,181 - root - INFO - verbose_logging: False
+2023-07-20 13:55:00,181 - root - INFO - no_cuda: False
+2023-07-20 13:55:00,181 - root - INFO - seed: 2021
+2023-07-20 13:55:00,181 - root - INFO - gradient_accumulation_steps: 1
+2023-07-20 13:55:00,181 - root - INFO - do_lower_case: True
+2023-07-20 13:55:00,181 - root - INFO - local_rank: -1
+2023-07-20 13:55:00,181 - root - INFO - fp16: False
+2023-07-20 13:55:00,181 - root - INFO - loss_scale: 0
+2023-07-20 13:55:00,181 - root - INFO - save_model_step: 500
+2023-07-20 13:55:00,181 - root - INFO - ------------------------------
+2023-07-20 13:55:00,181 - root - INFO - device: cpu n_gpu: 0, distributed training: False, 16-bits training: False
+2023-07-20 13:55:01,265 - root - INFO - start model from pretrained model!
+2023-07-20 13:55:02,054 - root - INFO - parameter setting...
+2023-07-20 13:55:02,054 - root - INFO - start read example...
+2023-07-20 13:55:02,055 - root - INFO - creating examples from origin file to ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 13:55:02,055 - root - INFO - read examples from origin file
+2023-07-20 14:01:02,530 - root - INFO - ---------------所有配置---------------
+2023-07-20 14:01:02,530 - root - INFO - 所有参数配置如下：
+2023-07-20 14:01:02,530 - root - INFO - bert_model: arvalinno/albert-base-v2-finetuned-squad
+2023-07-20 14:01:02,530 - root - INFO - output_dir: ../../data/checkpoints/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 14:01:02,530 - root - INFO - checkpoint_path: None
+2023-07-20 14:01:02,530 - root - INFO - warmup_steps: -1
+2023-07-20 14:01:02,530 - root - INFO - model_name: AlbertForQuestionAnsweringQANetWithMask
+2023-07-20 14:01:02,530 - root - INFO - train_file: ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 14:01:02,530 - root - INFO - overwrite_result: True
+2023-07-20 14:01:02,530 - root - INFO - save_all_steps: True
+2023-07-20 14:01:02,530 - root - INFO - log_prefix: 20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 14:01:02,530 - root - INFO - log_path: ../../log
+2023-07-20 14:01:02,530 - root - INFO - dev_file: ../../data/hotpot_data/hotpot_dev_labeled_data_v3.json
+2023-07-20 14:01:02,530 - root - INFO - train_supporting_para_file: ../../data/hotpot_data/train_golden.json
+2023-07-20 14:01:02,531 - root - INFO - dev_supporting_para_file: ../../data/selector_data/20211217_second_hop_electra_base_just_paragraph_selector_12_value_setting_result/dev_related.json
+2023-07-20 14:01:02,531 - root - INFO - feature_cache_path: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step
+2023-07-20 14:01:02,531 - root - INFO - feature_suffix: origin_model
+2023-07-20 14:01:02,531 - root - INFO - max_seq_length: 512
+2023-07-20 14:01:02,531 - root - INFO - doc_stride: 256
+2023-07-20 14:01:02,531 - root - INFO - train_batch_size: 12
+2023-07-20 14:01:02,531 - root - INFO - val_batch_size: 12
+2023-07-20 14:01:02,531 - root - INFO - learning_rate: 1e-05
+2023-07-20 14:01:02,531 - root - INFO - num_train_epochs: 3.0
+2023-07-20 14:01:02,531 - root - INFO - warmup_proportion: 0.1
+2023-07-20 14:01:02,531 - root - INFO - adam_epsilon: 1e-08
+2023-07-20 14:01:02,531 - root - INFO - verbose_logging: False
+2023-07-20 14:01:02,531 - root - INFO - no_cuda: False
+2023-07-20 14:01:02,531 - root - INFO - seed: 2021
+2023-07-20 14:01:02,531 - root - INFO - gradient_accumulation_steps: 1
+2023-07-20 14:01:02,531 - root - INFO - do_lower_case: True
+2023-07-20 14:01:02,531 - root - INFO - local_rank: -1
+2023-07-20 14:01:02,531 - root - INFO - fp16: False
+2023-07-20 14:01:02,531 - root - INFO - loss_scale: 0
+2023-07-20 14:01:02,531 - root - INFO - save_model_step: 500
+2023-07-20 14:01:02,531 - root - INFO - ------------------------------
+2023-07-20 14:01:02,531 - root - INFO - device: cpu n_gpu: 0, distributed training: False, 16-bits training: False
+2023-07-20 14:01:03,650 - root - INFO - start model from pretrained model!
+2023-07-20 14:01:04,423 - root - INFO - parameter setting...
+2023-07-20 14:01:04,424 - root - INFO - start read example...
+2023-07-20 14:01:04,424 - root - INFO - creating examples from origin file to ../../data/hotpot_data/hotpot_train_labeled_data_v3.json
+2023-07-20 14:01:04,424 - root - INFO - read examples from origin file
+2023-07-20 14:01:40,371 - root - INFO - saving 5000 examples to file: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step/train_example_file_albert-base-v2-finetuned-squad_512_256_origin_model
+2023-07-20 14:01:40,842 - root - INFO - train example num: 5000
+2023-07-20 14:01:40,842 - root - INFO - start reading features from origin examples...
+2023-07-20 14:01:44,859 - root - INFO - Saving train features into cached file ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step/train_feature_file_albert-base-v2-finetuned-squad_512_256_origin_model_0
+2023-07-20 14:01:45,596 - root - INFO - train feature_num: 5021
+2023-07-20 14:01:45,654 - root - INFO - t_total: 1254.0
+2023-07-20 14:01:45,654 - root - INFO - loading file: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step/train_feature_file_albert-base-v2-finetuned-squad_512_256_origin_model_0
+2023-07-20 14:01:46,341 - root - INFO - load file: ../../data/cache/20220125_run_qanet_pretrain_bs12_lr10_with_mask_step/train_feature_file_albert-base-v2-finetuned-squad_512_256_origin_model_0 done!

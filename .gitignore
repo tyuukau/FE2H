@@ -6,3 +6,5 @@ data/hotpot_data/hotpot_dev_labeled_data_v3.json
 nlp/
 data/hotpot_data/train_golden.json
 data/hotpot_data/dev_golden.json
+data/selector_data/20211217_first_hop_electra_base_related_paragraph_selector_12_value_setting/dev_related_paragraph.json
+data/

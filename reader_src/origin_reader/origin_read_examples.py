@@ -3,7 +3,7 @@ from tqdm import tqdm
 from multiprocessing.pool import Pool
 import multiprocessing
 from origin_reader_helper import HotpotQAExample, is_whitespace
-
+from itertools import repeat
 
 def question_text_process(question, tokenizer):
     """ 将question转化为token"""
@@ -29,10 +29,8 @@ is_training_global = False
 tokenizer_global = None
 sp_dict_global = None
 
-
-def process_single_data(data):
+def process_single_data(data, tokenizer):
     global is_training_global
-    global tokenizer_global
     global sp_dict_global
     tmp_examples = []
     context = ""
@@ -48,7 +46,7 @@ def process_single_data(data):
     full_sents_lbs = []
     char_to_matrix = []
     input_sentence_idx = 1  # 输入到模型中句子编号
-    question_tokens = question_text_process(question, tokenizer=tokenizer_global)
+    question_tokens = question_text_process(question, tokenizer=tokenizer)
     if is_training_global:
         answer_label = data['labels'][0]
         sent_lbs = []
@@ -234,9 +232,10 @@ def process_single_data(data):
     )
     tmp_examples.append(example)
     return tmp_examples
+    
 
+def read_examples(input_file, supporting_para_file, tokenizer, is_training, maximum_examples=5000):
 
-def read_examples(input_file, supporting_para_file, tokenizer, is_training):
     # 处理后的数据
     global is_training_global
     global tokenizer_global
@@ -255,16 +254,26 @@ def read_examples(input_file, supporting_para_file, tokenizer, is_training):
     no_answer_examples = 0
     is_training_global = is_training
     tokenizer_global = tokenizer
+    print(type(tokenizer_global))
+    
     sp_dict_global = sp_dict
+    
+    # Limit the number of examples to be processed
+    if maximum_examples is not None and maximum_examples > 0:
+        datas = datas[:maximum_examples]
+
     # 多进程处理
     # for data_idx, data in enumerate(tqdm(datas)):
     pool_size = max(1, multiprocessing.cpu_count() // 4)
     pool = Pool(pool_size)
-    for result in tqdm(pool.imap(func=process_single_data, iterable=datas),
-                                              total=len(datas),
-                                              desc="process examples..."):
+    # for result in tqdm(pool.starmap(process_single_data, zip(datas, repeat(tokenizer))),
+    #                                           total=len(datas),
+    #                                           desc="process examples..."):
 
-       examples.extend(result)
+    for data in tqdm(datas, total=len(datas), desc="process examples..."):
+        result = process_single_data(data, tokenizer)
+        examples.extend(result)
+       
     # 单进程处理
     # for data in tqdm(datas):
     #     examples.extend(process_single_data(data=data))

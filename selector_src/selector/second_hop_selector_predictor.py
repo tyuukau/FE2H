@@ -34,7 +34,7 @@ from second_hop_data_helper import (HotpotQAExample,
                                     read_second_hotpotqa_examples,
                                     convert_examples_to_second_features)
 from second_selector_predictor_config import get_config
-sys.path.append("../pretrain_model")
+
 from pretrain_model.changed_model import BertForParagraphClassification, BertForRelatedSentence, \
     ElectraForParagraphClassification, ElectraForRelatedSentence, \
     RobertaForParagraphClassification, RobertaForRelatedSentence, \
