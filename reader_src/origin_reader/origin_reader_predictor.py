@@ -53,7 +53,7 @@ from lazy_dataloader import LazyLoadTensorDataset
 from config_predict import get_config
 
 sys.path.append("../pretrain_model")
-from changed_model_roberta import ElectraForQuestionAnsweringForwardWithEntity, ElectraForQuestionAnsweringForwardBest, \
+from pretrain_model.changed_model_roberta import ElectraForQuestionAnsweringForwardBest, \
     ElectraForQuestionAnsweringMatchAttention, ElectraForQuestionAnsweringCrossAttention, \
     ElectraForQuestionAnsweringBiAttention, ElectraForQuestionAnsweringCrossAttentionOnReader,\
     ElectraForQuestionAnsweringThreeCrossAttention, \
@@ -71,11 +71,10 @@ from changed_model_roberta import ElectraForQuestionAnsweringForwardWithEntity, 
     ElectraForQuestionAnsweringCoAttention, ElectraForQuestionAnsweringQANetWoCro, \
     ElectraForQuestionAnsweringQANetWoLN, AlbertForQuestionAnsweringForwardBestWithMask, \
     AlbertForQuestionAnsweringQANetWithMask
-from optimization import BertAdam, warmup_linear
+from pretrain_model.optimization import BertAdam, warmup_linear
 # 自定义好的模型
 model_dict = {
     'ElectraForQuestionAnsweringForwardBest': ElectraForQuestionAnsweringForwardBest,
-    'ElectraForQuestionAnsweringForwardWithEntity': ElectraForQuestionAnsweringForwardWithEntity,
     'ElectraForQuestionAnsweringMatchAttention': ElectraForQuestionAnsweringMatchAttention,
     'ElectraForQuestionAnsweringCrossAttention': ElectraForQuestionAnsweringCrossAttention,
     'ElectraForQuestionAnsweringBiAttention': ElectraForQuestionAnsweringBiAttention,
