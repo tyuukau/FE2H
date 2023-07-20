@@ -1,5 +1,5 @@
-torch==1.7.1
-transformers==2.5.1
+torch==2.0.0
+transformers
 tqdm
 nltk
 scikit-learn
@@ -8,5 +8,3 @@ numpy
 regex
 pandas
 spacy
-json
-bisect

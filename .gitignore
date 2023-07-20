@@ -3,3 +3,4 @@ data/hotpot_data/hotpot_train_labeled_data_v3.json
 data/hotpot_data/.hotpot_dev_distractor_v1.json.icloud
 data/hotpot_data/.hotpot_train_v1.1.json.icloud
 data/hotpot_data/hotpot_dev_labeled_data_v3.json
+nlp/
